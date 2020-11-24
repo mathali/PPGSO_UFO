@@ -1,0 +1,10 @@
+          int rand_x, rand_z;
+          do {
+              rand_x = int(pos_x) + glm::linearRand(0, 80);
+              rand_z = int(pos_x) + glm::linearRand(0, 80);
+          }while(occupied[rand_x - int(pos_x)][rand_z - int(pos_z)]);
+          for(int i = (rand_x - int(pos_x))-offset; i < (rand_x - int(pos_x))+offset; i++){
+              for(int j = (rand_z - int(pos_z))-offset; j < (rand_z - int(pos_z))+offset; j++){
+                  occupied[i][j] = true;
+              }
+          }

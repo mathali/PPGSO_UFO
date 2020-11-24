@@ -1,0 +1,10 @@
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/test.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/shaders.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/install/local.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/install.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/ppgso.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/list_install_components.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/install/strip.dir

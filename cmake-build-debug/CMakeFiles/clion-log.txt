@@ -1,0 +1,6 @@
+"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt"
+-- Found GLFW3: D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/dependencies/lib/mingw/libglfw3.a
+-- GLM_INCLUDE_DIR = D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/dependencies/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug
