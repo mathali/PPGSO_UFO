@@ -42,6 +42,7 @@ bool Projectile::update(Scene &scene, float dt) {
 }
 
 void Projectile::render(Scene &scene) {
+
   shader->use();
 
   // Set up light
@@ -56,6 +57,8 @@ void Projectile::render(Scene &scene) {
   // render mesh
   shader->setUniform("ModelMatrix", modelMatrix);
   //shader->setUniform("Texture", *texture);
+
+
   mesh->render();
 }
 

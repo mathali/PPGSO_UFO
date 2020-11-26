@@ -53,12 +53,12 @@ bool Player::update(Scene &scene, float dt) {
   }
 
   // Keyboard controls
-  if(scene.keyboard[GLFW_KEY_LEFT]) {
+  if(scene.keyboard[GLFW_KEY_A]) {
     direction = 0;
     position.x += 15 * dt;
     scene.camera->position.x = position.x;
     rotation.z = -ppgso::PI/4.0f;
-  } else if(scene.keyboard[GLFW_KEY_RIGHT]) {
+  } else if(scene.keyboard[GLFW_KEY_D]) {
     direction = 1;
     position.x -= 15 * dt;
     scene.camera->position.x = position.x;
@@ -67,13 +67,13 @@ bool Player::update(Scene &scene, float dt) {
     direction = -1;
     rotation.z = 0;
   }
-  if(scene.keyboard[GLFW_KEY_UP]) {
+  if(scene.keyboard[GLFW_KEY_W]) {
     if(direction == -1)direction = 2;
     else direction = 4 + direction;
     position.z += 15 * dt;
     scene.camera->position.z += 15 * dt;
     rotation.x = ppgso::PI/30.0f;
-  } else if(scene.keyboard[GLFW_KEY_DOWN]) {
+  } else if(scene.keyboard[GLFW_KEY_S]) {
     if(direction == -1)direction = 3;
     else direction = 6 + direction;
     position.z -= 15 * dt;
@@ -84,6 +84,7 @@ bool Player::update(Scene &scene, float dt) {
   }
 
   // Firing projectiles
+  std::cout<<scene.keyboard[GLFW_KEY_SPACE]<<std::endl;
   if(scene.keyboard[GLFW_KEY_SPACE] && fireDelay > fireRate) {  //TODO: Doesn't detect space if UP and LEFT
     // Reset fire delay
     fireDelay = 0;

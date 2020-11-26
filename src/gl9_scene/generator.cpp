@@ -10,10 +10,11 @@
 #include "player.h"
 
 bool Generator::update(Scene &scene, float dt) {
+
   unsigned int no_objects = scene.objects.size();
   if(!flag && no_objects < 500) {
-      for (auto &obj : scene.objects) {      //TODO: Check this, it works very strangely - FIXED?
-          if (obj.get() == this) continue;   //TODO: Probably need to rework the area where objects are generated - FIXED?
+      for (auto &obj : scene.objects) {
+          if (obj.get() == this) continue;
           auto player = dynamic_cast<Player *>(obj.get());
           if (player && (abs(position.x - player->position.x) >= 40 || abs(position.z - player->position.z) >= 40)) {
               switch (player->direction){
@@ -64,7 +65,7 @@ bool Generator::update(Scene &scene, float dt) {
   float pos_z = position.z - 40;
 
   // Add object to scene when time reaches certain level time > .3
-  if (flag) {       // TODO: Generated an infinite amount of times one time. Maybe due to procedural animation
+  if (flag) {
       bool occupied[100][100];
       short unsigned int offset_cow = 2;
       short unsigned int offset_house = 6;
