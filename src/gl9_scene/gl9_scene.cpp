@@ -9,6 +9,7 @@
 #include <iostream>
 #include <map>
 #include <list>
+#include <string>
 
 #include <ppgso/ppgso.h>
 
@@ -22,6 +23,17 @@
 #include "cage.h"
 
 const unsigned int SIZE = 512;
+/*glm::vec3 keyFrame1 = {0.0f, 5.0f, -20.0f};
+glm::vec3 keyFrame2 = {20.0f, 5.0f, -20.0f};
+glm::vec3 keyFrame3 = {20.0f, 5.0f, 0.0f};
+glm::vec3 keyFrame4 = {0.0f, 5.0f, 0.0f};
+glm::vec3 keyFrame5 = {0.0f, 5.0f, 20.0f};
+glm::vec3 keyFrame6 = {-20.0f, 5.0f, 20.0f};
+glm::vec3 keyFrame7 = {-20.0f, 5.0f, 0.0f};
+glm::vec3 keyFrame8 = {0.0f, 5.0f, 0.0f};*/
+
+
+int count = 0;
 
 /*!
  * Custom windows for our simple game
@@ -46,6 +58,7 @@ private:
     auto camera = std::make_unique<Camera>(75.0f, 1.0f, 0.1f, 100.0f);
     camera->position.z = -15.0f;
     camera->position.y = 7.0f;
+    camera->secondScene = false;
     scene.camera = move(camera);
 
     // Add space background
@@ -81,12 +94,12 @@ private:
       camera->position.z = -20.0f;
       camera->position.x = 0.0f;
       camera->position.y = 5.0f;
+      camera->secondScene = true;
       camera->back = {camera->position.x, 0, camera->position.z};
       scene.camera = move(camera);
 
       auto floor = std::make_unique<Room_wall>();
       floor->position = {0, 0, 0};
-      //floor->scale = {2, 2, 1};
       scene.objects.push_back(move(floor));
 
       auto ceiling = std::make_unique<Room_wall>();
@@ -97,13 +110,11 @@ private:
       auto side1 = std::make_unique<Room_wall>();
       side1->position = {0, 10, 20};
       side1->rotation = {-ppgso::PI, 0, 0};
-      //side1->scale = {2, 2, 1};
       scene.objects.push_back(move(side1));
 
       auto side2 = std::make_unique<Room_wall>();
       side2->position = {20, 10, 0};
       side2->rotation = {-ppgso::PI, ppgso::PI, -3*ppgso::PI/2};
-      //side2->scale = {5, 5, 1};
       scene.objects.push_back(move(side2));
 
       auto side3 = std::make_unique<Room_wall>();
@@ -111,16 +122,15 @@ private:
       side3->rotation = {-ppgso::PI, ppgso::PI, 3*ppgso::PI/2};
       scene.objects.push_back(move(side3));
 
-      for(int j = 0; j < 3; j++)
+      for(int j = 0; j < 4; j++)
       for(int i = 0; i < 7; i++) {
           auto cage = std::make_unique<Cage>();
-          cage->position = {17.5 + -5*i, 1, j*10 - 10};
-          //cage->rotation = {-ppgso::PI, ppgso::PI, 3*ppgso::PI/2};
+          cage->position = {15 + -5*i, 1, j*10 - 15};
           scene.objects.push_back(move(cage));
 
           if(scene.captured > 0) {
               auto cow = std::make_unique<Asteroid>();
-              cow->position = {17.5 + -5 * i + 2.2, 3.5, j * 10 - 10 - 2.2};
+              cow->position = {15 + -5 * i + 2.2, 3.5, j * 10 - 15 - 2.2};
               cow->scale = {0.5, 0.5, 0.5};
               cow->rotation = {0, 0, ppgso::PI};
               scene.objects.push_back(move(cow));
@@ -239,6 +249,36 @@ public:
     }
   }
 
+    /*glm::vec3 bezierPoint(const glm::vec3 CP0,const glm::vec3 CP1,const glm::vec3 CP2 , float t) {
+        glm::vec3 supp1_1 = lerp(CP0, CP1, t);
+        glm::vec3 supp1_2 = lerp(CP1, CP2, t);
+
+        glm::vec3 point = lerp(supp1_1, supp1_2, t);
+        return point;
+    }*/
+
+    glm::mat4 bezierPoint(const glm::mat4 CP0,const glm::mat4 CP1,const glm::mat4 CP2 , float t) {
+        glm::mat4 out;
+
+        glm::vec4 supp0_1 = lerp(CP0[0], CP1[0], t);
+        glm::vec4 supp0_2 = lerp(CP1[0], CP2[0], t);
+        out[0] = lerp(supp0_1, supp0_2, t);
+
+        glm::vec4 supp1_1 = lerp(CP0[1], CP1[1], t);
+        glm::vec4 supp1_2 = lerp(CP1[1], CP2[1], t);
+        out[1] = lerp(supp1_1, supp1_2, t);
+
+        glm::vec4 supp2_1 = lerp(CP0[2], CP1[2], t);
+        glm::vec4 supp2_2 = lerp(CP1[2], CP2[2], t);
+        out[2] = lerp(supp2_1, supp2_2, t);
+
+        glm::vec4 supp3_1 = lerp(CP0[3], CP1[3], t);
+        glm::vec4 supp3_2 = lerp(CP1[3], CP2[3], t);
+        out[3] = lerp(supp3_1, supp3_2, t);
+
+        return out;
+    }
+
   /*!
    * Window update implementation that will be called automatically from pollEvents
    */
@@ -258,16 +298,65 @@ public:
 
 
     // Update and render all objects
-    if(scene.timer < 1000.0f || scene.secondScene) {
+    if(scene.timer < 30.0f || scene.secondScene) {
         scene.update(dt);
         scene.render();
+        if(scene.secondScene){
+            /*if(count % 900 < 150) {
+                scene.camera->position = bezierPoint(keyFrame1, keyFrame2, keyFrame3, ((count % 150)*dt) / 150);
+            }else if(count % 900 < 300) {
+                scene.camera->position = bezierPoint(keyFrame2, keyFrame3, keyFrame4, ((count % 150)*dt) / 150);
+            }else if(count % 900 < 450) {
+                scene.camera->position = bezierPoint(keyFrame3, keyFrame4, keyFrame5, ((count % 150)*dt) / 150);
+            }else if(count % 900 < 600) {
+                scene.camera->position = bezierPoint(keyFrame4, keyFrame5, keyFrame6, ((count % 150)*dt) / 150);
+            }else if(count % 900 < 750) {
+                scene.camera->position = bezierPoint(keyFrame5, keyFrame6, keyFrame7, ((count % 150)*dt) / 150);
+            }else if(count % 900 < 900) {
+                scene.camera->position = bezierPoint(keyFrame6, keyFrame7, keyFrame8, ((count % 150)*dt) / 150);
+            }*/
+
+            /*if(scene.timer < 15.0f) {
+                scene.camera->position = bezierPoint(keyFrame1, keyFrame2, keyFrame3, (scene.timer/10) / 15.0f);
+            }else if(scene.timer < 30.0f) {
+                scene.camera->position = bezierPoint(keyFrame2, keyFrame3, keyFrame4, ((scene.timer-15.0f)/10) / 15.0f);
+            }else if(scene.timer < 45.0f) {
+                scene.camera->position = bezierPoint(keyFrame3, keyFrame4, keyFrame5, ((scene.timer-30.0f)/10) / 15.0f);
+            }else if(scene.timer < 60.0f) {
+                scene.camera->position = bezierPoint(keyFrame4, keyFrame5, keyFrame6, ((scene.timer-45.0f)/10) / 15.0f);
+            }else if(scene.timer < 75.0f) {
+                scene.camera->position = bezierPoint(keyFrame5, keyFrame6, keyFrame7, ((scene.timer-60.0f)/10) / 15.0f);
+            }else if(scene.timer < 90.0f) {
+                scene.camera->position = bezierPoint(keyFrame6, keyFrame7, keyFrame8, ((scene.timer-75.0f)/10) / 15.0f);
+                scene.timer = 5.0f;
+            }*/
+
+            if(scene.timer < 15.0f) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame1, scene.camera->keyFrame2, scene.camera->keyFrame3, (scene.timer/10) / 15.0f);
+            }else if(scene.timer < 30.0f) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame2, scene.camera->keyFrame3, scene.camera->keyFrame4, ((scene.timer-15.0f)/15) / 15.0f);
+            }else if(scene.timer < 45.0f) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame3, scene.camera->keyFrame4, scene.camera->keyFrame5, ((scene.timer-30.0f)/15) / 15.0f);
+            }else if(scene.timer < 60.0f) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame4, scene.camera->keyFrame5, scene.camera->keyFrame6, ((scene.timer-45.0f)/10) / 15.0f);
+            }else if(scene.timer < 75.0f) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame5, scene.camera->keyFrame6, scene.camera->keyFrame7, ((scene.timer-60.0f)/10) / 15.0f);
+                scene.timer = 0.0f;
+            }
+
+            scene.timer += dt;
+            //count++;
+        }
     }
     else{
         initSecondScene();
         scene.secondScene = true;
+        scene.timer = 0.0f;
     }
   }
 };
+
+
 
 int main() {
   // Initialize our window

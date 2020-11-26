@@ -10,8 +10,9 @@ Camera::Camera(float fow, float ratio, float near, float far) {
 }
 
 void Camera::update() {
-  viewMatrix = lookAt(position, position-back, up);
-
+  if(!secondScene) {
+      viewMatrix = lookAt(position, position - back, up);
+  }  //TODO: Figure out the shape of the matrix in keyframe positions, interpolate between them in the second scene
 }
 
 glm::vec3 Camera::cast(double u, double v) {
