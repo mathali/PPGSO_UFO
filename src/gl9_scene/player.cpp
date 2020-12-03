@@ -84,7 +84,6 @@ bool Player::update(Scene &scene, float dt) {
   }
 
   // Firing projectiles
-  std::cout<<scene.keyboard[GLFW_KEY_SPACE]<<std::endl;
   if(scene.keyboard[GLFW_KEY_SPACE] && fireDelay > fireRate) {  //TODO: Doesn't detect space if UP and LEFT
     // Reset fire delay
     fireDelay = 0;

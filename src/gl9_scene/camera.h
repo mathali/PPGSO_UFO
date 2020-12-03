@@ -20,7 +20,13 @@ public:
 
   bool secondScene = false;
 
-    glm::mat4 keyFrame1 = {
+  struct keyFrame{
+      glm::mat4 matrix;
+      float t;
+  } first, second, third, fourth, fifth, sixth, seventh;
+
+
+    /*glm::mat4 keyFrame1 = {
             {0, 0, 1, 0},
             { 0, 1, 0, 0 },
             {-1, 0, 0, 0},
@@ -67,7 +73,7 @@ public:
             {0, 1, 0, 0},
             {0.707, 0, 0.707, 0},
             {0, -5, -28.284, 1}
-    };
+    };*/
 
   /*!
    * Create new Camera that will generate viewMatrix and projectionMatrix based on its position, up and back vectors

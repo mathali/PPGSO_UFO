@@ -80,7 +80,7 @@ void House::render(Scene &scene) {
 
     shader->setUniform("BeamFlag", scene.beam_flag);
     shader->setUniform("BeamPos", scene.beam_pos - position);
-    shader->setUniform("BeamDirection", scene.beam_pos - position);
+    shader->setUniform("BeamDirection",  scene.beam_direction);
     shader->setUniform("BeamColor", scene.beam_color);
     shader->setUniform("BeamCutoff", scene.beam_cutoff);
     shader->setUniform("LightDirection", scene.lightDirection);

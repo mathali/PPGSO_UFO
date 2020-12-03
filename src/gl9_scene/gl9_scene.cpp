@@ -132,7 +132,7 @@ private:
               auto cow = std::make_unique<Asteroid>();
               cow->position = {15 + -5 * i + 2.2, 3.5, j * 10 - 15 - 2.2};
               cow->scale = {0.5, 0.5, 0.5};
-              cow->rotation = {0, 0, ppgso::PI};
+              cow->rotation = {0, 0, 0};
               scene.objects.push_back(move(cow));
               scene.captured--;
           }
@@ -331,7 +331,7 @@ public:
                 scene.timer = 5.0f;
             }*/
 
-            if(scene.timer < 15.0f) {
+            /*if(scene.timer < 15.0f) {
                 scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame1, scene.camera->keyFrame2, scene.camera->keyFrame3, (scene.timer/10) / 15.0f);
             }else if(scene.timer < 30.0f) {
                 scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame2, scene.camera->keyFrame3, scene.camera->keyFrame4, ((scene.timer-15.0f)/15) / 15.0f);
@@ -341,6 +341,24 @@ public:
                 scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame4, scene.camera->keyFrame5, scene.camera->keyFrame6, ((scene.timer-45.0f)/10) / 15.0f);
             }else if(scene.timer < 75.0f) {
                 scene.camera->viewMatrix = bezierPoint(scene.camera->keyFrame5, scene.camera->keyFrame6, scene.camera->keyFrame7, ((scene.timer-60.0f)/10) / 15.0f);
+                scene.timer = 0.0f;
+            }*/
+
+            if(scene.timer < scene.camera->second.t) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->first.matrix, scene.camera->second.matrix, scene.camera->third.matrix,
+                                                       scene.timer / (scene.camera->second.t - scene.camera->first.t));
+            }else if(scene.timer < scene.camera->third.t) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->second.matrix, scene.camera->third.matrix, scene.camera->fourth.matrix,
+                                                       (scene.timer - scene.camera->second.t) / (scene.camera->third.t - scene.camera->second.t));
+            }else if(scene.timer < scene.camera->fourth.t) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->third.matrix, scene.camera->fourth.matrix, scene.camera->fifth.matrix,
+                                                       (scene.timer-scene.camera->third.t) / (scene.camera->fourth.t - scene.camera->third.t));
+            }else if(scene.timer < scene.camera->fifth.t) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->fourth.matrix, scene.camera->fifth.matrix, scene.camera->sixth.matrix,
+                                                       (scene.timer-scene.camera->fourth.t) / (scene.camera->fifth.t - scene.camera->fourth.t));
+            }else if(scene.timer < scene.camera->sixth.t) {
+                scene.camera->viewMatrix = bezierPoint(scene.camera->fifth.matrix, scene.camera->sixth.matrix, scene.camera->seventh.matrix,
+                                                       (scene.timer-scene.camera->fifth.t) / (scene.camera->sixth.t - scene.camera->seventh.t));
                 scene.timer = 0.0f;
             }
 
