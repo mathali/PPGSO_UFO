@@ -8,10 +8,10 @@ Camera::Camera(float fow, float ratio, float near, float far) {
 
   projectionMatrix = glm::perspective(fowInRad, ratio, near, far);
   first.matrix = {
-          {1,  0, 0, 0},
+          {0.7071,  0, -0.7071, 0},
           {0, 1, 0, 0},
-          {0,  0, 1, 0},
-          {19, -6, -15, 1}
+          {0.7071,  0, 0.7071, 0},
+          {14.5, -6, -15, 1}
   };
   first.t = 0.0f;
 
@@ -19,7 +19,7 @@ Camera::Camera(float fow, float ratio, float near, float far) {
           {1,  0, 0, 0},
           {0, 1, 0, 0},
           {0,  0, 1, 0},
-          {19, -6, -8, 1}
+          {14.5, -6, -8, 1}
   };
   second.t = 15.0f;
 

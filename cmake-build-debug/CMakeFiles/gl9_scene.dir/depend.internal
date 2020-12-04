@@ -710,6 +710,8 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj
  ../dependencies/include/glm/gtc/type_ptr.inl
  ../dependencies/include/glm/gtx/compatibility.hpp
  ../dependencies/include/glm/gtx/compatibility.inl
+ ../dependencies/include/glm/gtx/matrix_interpolation.hpp
+ ../dependencies/include/glm/gtx/matrix_interpolation.inl
  ../dependencies/include/glm/integer.hpp
  ../dependencies/include/glm/mat2x2.hpp
  ../dependencies/include/glm/mat2x3.hpp
