@@ -2,10 +2,12 @@
 #include "player.h"
 #include "space.h"
 #include "generator.h"
+#include "house_shadow.h"
+#include "tree_shadow.h"
 
 void Scene::update(float time) {
   camera->update();
-  lightDirection = {-2.5f+abs(sin(timer/40)*5), abs(1+sin(timer/50)*2), 0};
+  lightDirection = {-2.5f+abs(sin(timer/40)*5), glm::clamp(abs(1+sin(timer/14)*2), 1.0, 3.0), 0};
   timer += time;
   //std::cout << lightDirection.x << " " << lightDirection.y << std::endl;
 
@@ -24,6 +26,38 @@ void Scene::update(float time) {
             beam_pos = {player_pos.x, player->position.y - 0.3f, player_pos.z - 4.3f};
             beam_direction = {0, -1, 0};
         }
+    }
+
+    auto house_shadow = dynamic_cast<House_shadow*>(i->get());
+    if(house_shadow){
+        //house_shadow->rotation.y = -ppgso::PI/2;
+        house_shadow->scale.x = 0.006/lightDirection.y;
+        //std::cout<<lightDirection.x <<" " <<lightDirection.y<<std::endl;
+        house_shadow->position.x = house_shadow->original_position.x + (lightDirection.x / (-2.5f));
+    }
+
+    auto tree_shadow = dynamic_cast<Tree_shadow*>(i->get());
+    if(tree_shadow){
+        //house_shadow->rotation.y = -ppgso::PI/2;
+        if(lightDirection.x > 0.5) {
+            tree_shadow->scale.x = 0.0005;
+            tree_shadow->rotation.y = -ppgso::PI/2;
+            tree_shadow->scale.y = -2.0f / (lightDirection.y * lightDirection.y);
+            tree_shadow->position.x = tree_shadow->original_position.x - 1.2f;
+        }else if(lightDirection.x > -0.5){
+            tree_shadow->scale.x = 1.5f;
+            tree_shadow->scale.y = 0.03f;
+            tree_shadow->rotation.y = 0;
+            //tree_shadow->scale.y = 0.05f;
+        }
+        else{
+            tree_shadow->scale.x = 0.0005;
+            tree_shadow->rotation.y = -ppgso::PI/2;
+            tree_shadow->scale.y = 2.0f / (lightDirection.y * lightDirection.y);
+            tree_shadow->position.x = tree_shadow->original_position.x - 0.5f;
+        }
+        //std::cout<<lightDirection.x <<" " <<lightDirection.y<<std::endl;
+        //tree_shadow->position.x = tree_shadow->original_position.x - 0.5f;
     }
 
     auto ground = dynamic_cast<Space*>(i->get());

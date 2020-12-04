@@ -106,7 +106,9 @@ add_executable(gl9_scene
         src/gl9_scene/explosion.cpp
         src/gl9_scene/space.cpp
         src/gl9_scene/house.cpp
+        src/gl9_scene/house_shadow.cpp
         src/gl9_scene/tree1_1.cpp
+        src/gl9_scene/tree_shadow.cpp
         src/gl9_scene/tree1_2.cpp
         src/gl9_scene/grass.cpp
         src/gl9_scene/room_wall.cpp

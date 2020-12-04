@@ -902,6 +902,33 @@ src/gl9_scene/house.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.s
 .PHONY : src/gl9_scene/house.cpp.s
 
+src/gl9_scene/house_shadow.obj: src/gl9_scene/house_shadow.cpp.obj
+
+.PHONY : src/gl9_scene/house_shadow.obj
+
+# target to build an object file
+src/gl9_scene/house_shadow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj
+.PHONY : src/gl9_scene/house_shadow.cpp.obj
+
+src/gl9_scene/house_shadow.i: src/gl9_scene/house_shadow.cpp.i
+
+.PHONY : src/gl9_scene/house_shadow.i
+
+# target to preprocess a source file
+src/gl9_scene/house_shadow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.i
+.PHONY : src/gl9_scene/house_shadow.cpp.i
+
+src/gl9_scene/house_shadow.s: src/gl9_scene/house_shadow.cpp.s
+
+.PHONY : src/gl9_scene/house_shadow.s
+
+# target to generate assembly for a file
+src/gl9_scene/house_shadow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.s
+.PHONY : src/gl9_scene/house_shadow.cpp.s
+
 src/gl9_scene/object.obj: src/gl9_scene/object.cpp.obj
 
 .PHONY : src/gl9_scene/object.obj
@@ -1118,6 +1145,33 @@ src/gl9_scene/tree1_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.s
 .PHONY : src/gl9_scene/tree1_2.cpp.s
 
+src/gl9_scene/tree_shadow.obj: src/gl9_scene/tree_shadow.cpp.obj
+
+.PHONY : src/gl9_scene/tree_shadow.obj
+
+# target to build an object file
+src/gl9_scene/tree_shadow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj
+.PHONY : src/gl9_scene/tree_shadow.cpp.obj
+
+src/gl9_scene/tree_shadow.i: src/gl9_scene/tree_shadow.cpp.i
+
+.PHONY : src/gl9_scene/tree_shadow.i
+
+# target to preprocess a source file
+src/gl9_scene/tree_shadow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.i
+.PHONY : src/gl9_scene/tree_shadow.cpp.i
+
+src/gl9_scene/tree_shadow.s: src/gl9_scene/tree_shadow.cpp.s
+
+.PHONY : src/gl9_scene/tree_shadow.s
+
+# target to generate assembly for a file
+src/gl9_scene/tree_shadow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.s
+.PHONY : src/gl9_scene/tree_shadow.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1209,6 +1263,9 @@ help:
 	@echo ... src/gl9_scene/house.obj
 	@echo ... src/gl9_scene/house.i
 	@echo ... src/gl9_scene/house.s
+	@echo ... src/gl9_scene/house_shadow.obj
+	@echo ... src/gl9_scene/house_shadow.i
+	@echo ... src/gl9_scene/house_shadow.s
 	@echo ... src/gl9_scene/object.obj
 	@echo ... src/gl9_scene/object.i
 	@echo ... src/gl9_scene/object.s
@@ -1233,6 +1290,9 @@ help:
 	@echo ... src/gl9_scene/tree1_2.obj
 	@echo ... src/gl9_scene/tree1_2.i
 	@echo ... src/gl9_scene/tree1_2.s
+	@echo ... src/gl9_scene/tree_shadow.obj
+	@echo ... src/gl9_scene/tree_shadow.i
+	@echo ... src/gl9_scene/tree_shadow.s
 .PHONY : help
 
 

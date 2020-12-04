@@ -8,6 +8,8 @@
 #include "tree1_2.h"
 #include "grass.h"
 #include "player.h"
+#include "house_shadow.h"
+#include "tree_shadow.h"
 
 bool Generator::update(Scene &scene, float dt) {
 
@@ -104,7 +106,17 @@ bool Generator::update(Scene &scene, float dt) {
           obj->position = position;
           obj->position.x = rand_x;
           obj->position.z = rand_z;
+          auto house_shadow = std::make_unique<House_shadow>();
+          obj->shadow = reinterpret_cast<House_shadow *>(&house_shadow);
+          house_shadow->position = obj->position;
+          house_shadow->original_position = obj->position;
+          house_shadow->position.x += 1;
+          // shadow->position.y += 5;
+          house_shadow->rotation.z = obj->rotation.z;
+          // shadow->rotation.y = -ppgso::PI/2;
+          house_shadow->scale.y = 0.0005;
           scene.objects.push_back(move(obj));
+          scene.objects.push_back(move(house_shadow));
       }
       for( int x = 0; x < glm::linearRand(8, 12); x++) {
 
@@ -119,10 +131,21 @@ bool Generator::update(Scene &scene, float dt) {
               }
           }
           auto obj1 = std::make_unique<Tree1_1>();
-          obj1->position.y = position.y + 0.5;
+          obj1->position.y = position.y;
           obj1->position.x = rand_x;
           obj1->position.z = rand_z;
+          auto tree_shadow = std::make_unique<Tree_shadow>();
+          tree_shadow->position.x = obj1->position.x-0.1f;
+          tree_shadow->position.y = obj1->position.y;
+          tree_shadow->position.z = obj1->position.z;
+          tree_shadow->original_position = obj1->position;
+          //tree_shadow->position.x += 1;
+          // shadow->position.y += 5;
+          tree_shadow->rotation.y = -ppgso::PI/2;
+          tree_shadow->scale.x = 0.0005;
+          tree_shadow->scale.y = -tree_shadow->scale.y;
           scene.objects.push_back(move(obj1));
+          scene.objects.push_back(move(tree_shadow));
 
           /*auto obj2 = std::make_unique<Tree1_2>();
           obj2->position.y = position.y + 1.0;

@@ -790,14 +790,6 @@ compatibility.inl
 limits
 -
 
-../dependencies/include/glm/gtx/matrix_interpolation.hpp
-../glm.hpp
-../dependencies/include/glm/glm.hpp
-matrix_interpolation.inl
-../dependencies/include/glm/gtx/matrix_interpolation.inl
-
-../dependencies/include/glm/gtx/matrix_interpolation.inl
-
 ../dependencies/include/glm/integer.hpp
 detail/func_integer.hpp
 ../dependencies/include/glm/detail/func_integer.hpp
@@ -1012,26 +1004,6 @@ GL/glew.h
 GLFW/glfw3.h
 -
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.cpp
-glm/gtc/random.hpp
--
-asteroid.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.h
-projectile.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.h
-explosion.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/explosion.h
-grass.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.h
-tree1_1.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.h
-house.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
-
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.h
 memory
 -
@@ -1042,28 +1014,6 @@ D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cage.cpp
-cage.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cage.h
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cage.h
-ppgso/ppgso.h
--
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.cpp
-glm/glm.hpp
--
-camera.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.h
-
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.h
 memory
 -
@@ -1071,24 +1021,6 @@ glm/glm.hpp
 -
 ppgso/ppgso.h
 -
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/explosion.cpp
-glm/gtc/random.hpp
--
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-explosion.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/explosion.h
-shaders/texture_vert_glsl.h
--
-shaders/texture_frag_glsl.h
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/explosion.h
-ppgso/ppgso.h
--
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.cpp
 glm/gtc/random.hpp
@@ -1109,54 +1041,16 @@ grass.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.h
 player.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
+house_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
+tree_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.h
 
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.h
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 scene.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/gl9_scene.cpp
-iostream
--
-map
--
-list
--
-string
--
-glm/gtx/matrix_interpolation.hpp
--
-ppgso/ppgso.h
--
-camera.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.h
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-generator.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.h
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-space.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.h
-asteroid.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.h
-room_wall.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/room_wall.h
-cage.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cage.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.cpp
-glm/gtc/random.hpp
--
-grass.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.h
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
 
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.h
 memory
@@ -1168,21 +1062,19 @@ D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.cpp
-glm/gtc/random.hpp
--
-house.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.h
-explosion.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/explosion.h
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-shaders/diffuse_vert_glsl.h
+memory
 -
-shaders/diffuse_frag_glsl.h
+ppgso/ppgso.h
 -
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
+house_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
 memory
 -
 ppgso/ppgso.h
@@ -1202,71 +1094,11 @@ map
 glm/glm.hpp
 -
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.cpp
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-asteroid.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.h
-projectile.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.h
-explosion.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/explosion.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
-
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
 ppgso/ppgso.h
 -
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.cpp
-glm/gtc/random.hpp
--
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-projectile.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.h
-shaders/color_vert_glsl.h
--
-shaders/color_frag_glsl.h
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.h
-ppgso/ppgso.h
--
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/room_wall.cpp
-room_wall.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/room_wall.h
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/room_wall.h
-ppgso/ppgso.h
--
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.cpp
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-space.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.h
-generator.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.h
 
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
 memory
@@ -1280,34 +1112,6 @@ D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 camera.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.cpp
-space.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.h
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.h
-ppgso/ppgso.h
--
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.cpp
-glm/gtc/random.hpp
--
-tree1_1.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.h
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
-
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.h
 memory
 -
@@ -1317,18 +1121,6 @@ scene.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_2.cpp
-glm/gtc/random.hpp
--
-tree1_2.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_2.h
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
 
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_2.h
 memory
@@ -1340,27 +1132,13 @@ D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 
-shaders/color_frag_glsl.h
-string
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.h
+memory
 -
-
-shaders/color_vert_glsl.h
-string
+ppgso/ppgso.h
 -
-
-shaders/diffuse_frag_glsl.h
-string
--
-
-shaders/diffuse_vert_glsl.h
-string
--
-
-shaders/texture_frag_glsl.h
-string
--
-
-shaders/texture_vert_glsl.h
-string
--
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 

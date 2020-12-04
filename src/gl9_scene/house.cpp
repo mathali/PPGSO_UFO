@@ -17,6 +17,7 @@ House::House() {
     scale *=  0.004f;//glm::linearRand(1.0f, 3.0f);
     rotation = {0, 0, glm::linearRand(-3.0f, 3.0f)};
 
+
     // Initialize static resources if needed
     if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
     if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("house.bmp"));

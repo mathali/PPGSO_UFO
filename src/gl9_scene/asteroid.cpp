@@ -45,6 +45,7 @@ bool Asteroid::update(Scene &scene, float dt) { //TODO: Figure out why cows some
   float temp_position = position.y;
   float org_x = position.x;
   float org_z = position.z;
+  bool keep = true;
   // Collide with scene
   for (auto &obj : scene.objects) {
     // Ignore self in scene
@@ -61,8 +62,14 @@ bool Asteroid::update(Scene &scene, float dt) { //TODO: Figure out why cows some
             float explosion_scale = glm::linearRand(1.0f, 4.0f);
             house->explode(scene, explosion_position, {explosion_scale, explosion_scale, explosion_scale}, 3);
         }
-        return false;
+        keep = false;
     }
+
+    auto house_shadow = dynamic_cast<House_shadow*>(obj.get()); // dynamic_pointer_cast<Asteroid>(obj);
+    if(house_shadow && caught && (abs(position.x - house_shadow->position.x) <= 4 && abs(position.z - house_shadow->position.z) <= 4)){
+        house_shadow->age = 100.0f;
+    }
+    if(!keep)return false;
     auto projectile = dynamic_cast<Projectile*>(obj.get()); //dynamic_pointer_cast<Projectile>(obj);
     //if (!projectile) continue;
     /*if(projectile) {

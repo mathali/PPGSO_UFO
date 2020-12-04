@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/gl9_scene.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.obj"
+  "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj"
@@ -20,6 +21,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_2.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.obj"
+  "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

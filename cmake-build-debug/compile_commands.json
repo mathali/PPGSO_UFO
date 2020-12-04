@@ -141,8 +141,18 @@
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\house_shadow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\house_shadow.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.cpp"
+},
+{
+  "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
   "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\tree1_1.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\tree1_1.cpp\"",
   "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.cpp"
+},
+{
+  "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\tree_shadow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\tree_shadow.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",

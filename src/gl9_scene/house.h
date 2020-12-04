@@ -5,6 +5,7 @@
 
 #include "scene.h"
 #include "object.h"
+#include "house_shadow.h"
 
 /*!
  * Simple house object
@@ -28,6 +29,7 @@ private:
 
 
 public:
+    House_shadow* shadow;
     /*!
      * Create new asteroid
      */

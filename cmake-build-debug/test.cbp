@@ -450,6 +450,12 @@
 		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.h">
 			<Option target="gl9_scene"/>
 		</Unit>
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h">
+			<Option target="gl9_scene"/>
+		</Unit>
 		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.cpp">
 			<Option target="gl9_scene"/>
 		</Unit>
@@ -496,6 +502,12 @@
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_2.h">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.h">
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/CMakeLists.txt">

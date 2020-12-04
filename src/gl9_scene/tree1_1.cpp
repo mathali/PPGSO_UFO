@@ -13,7 +13,7 @@ std::unique_ptr<ppgso::Shader> Tree1_1::shader;
 
 Tree1_1::Tree1_1() {
     // Set random scale speed and rotation
-    scale *=  glm::linearRand(1.8f, 2.7f);
+    scale *=  2.0f;//glm::linearRand(1.8f, 2.7f);
     //rotation = {-ppgso::PI/2, 0, 0};
 
     // Initialize static resources if needed
