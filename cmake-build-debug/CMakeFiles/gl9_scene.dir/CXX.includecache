@@ -1022,57 +1022,23 @@ glm/glm.hpp
 ppgso/ppgso.h
 -
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.cpp
-glm/gtc/random.hpp
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cow_shadow.h
+memory
 -
 ppgso/ppgso.h
 -
-generator.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.h
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 asteroid.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.h
-house.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.h
-tree1_1.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.h
-tree1_2.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_2.h
-grass.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.h
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-house_shadow.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
-tree_shadow.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.h
 
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.h
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 scene.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.h
-memory
--
-ppgso/ppgso.h
--
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.h
-memory
--
-ppgso/ppgso.h
--
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-house_shadow.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
 
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
 memory
@@ -1100,6 +1066,30 @@ ppgso/ppgso.h
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.h
+ppgso/ppgso.h
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.cpp
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
+player.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
+space.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.h
+generator.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.h
+house_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
+tree_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.h
+cow_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cow_shadow.h
+projectile.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.h
+
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
 memory
 -
@@ -1112,23 +1102,9 @@ D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 camera.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.h
-memory
--
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.h
 ppgso/ppgso.h
 -
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_2.h
-memory
--
-ppgso/ppgso.h
--
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
 object.h
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 

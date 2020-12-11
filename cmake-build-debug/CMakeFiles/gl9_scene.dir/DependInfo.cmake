@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cage.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj"
+  "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cow_shadow.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/explosion.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj"
   "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/gl9_scene.cpp" "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj"

@@ -53,6 +53,7 @@ private:
 
 public:
   float height_limit;
+  bool keep = true;
   /*!
    * Create new asteroid
    */

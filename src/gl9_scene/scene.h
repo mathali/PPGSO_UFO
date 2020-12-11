@@ -38,7 +38,7 @@ class Scene {
     std::unique_ptr<Camera> camera;
 
     // All objects to be rendered in scene
-    std::list< std::unique_ptr<Object> > objects;
+    std::list< std::shared_ptr<Object> > objects;
 
     // Keyboard state
     std::map< int, int > keyboard;

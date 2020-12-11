@@ -10,6 +10,7 @@
 #include "player.h"
 #include "house_shadow.h"
 #include "tree_shadow.h"
+#include "cow_shadow.h"
 
 bool Generator::update(Scene &scene, float dt) {
 
@@ -83,12 +84,14 @@ bool Generator::update(Scene &scene, float dt) {
                   occupied[i][j] = true;
               }
           }
-          auto obj = std::make_unique<Asteroid>();
+          auto obj = std::make_shared<Asteroid>();
           obj->position = position;
           obj->height_limit = position.y;
           obj->position.x = rand_x;
           obj->position.z = rand_z;
+          auto cow_shadow = std::make_unique<Cow_shadow>(obj);
           scene.objects.push_back(move(obj));
+          scene.objects.push_back(move(cow_shadow));
       }
       for( int x = 0; x < glm::linearRand(8, 12); x++) {
 

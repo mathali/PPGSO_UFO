@@ -4,6 +4,8 @@
 #include "generator.h"
 #include "house_shadow.h"
 #include "tree_shadow.h"
+#include "cow_shadow.h"
+#include "projectile.h"
 
 void Scene::update(float time) {
   camera->update();
@@ -14,7 +16,6 @@ void Scene::update(float time) {
 
   // Use iterator to update all objects so we can remove while iterating
   auto i = std::begin(objects);
-
   while (i != std::end(objects)) {
     // Update and remove from list if needed
     auto player = dynamic_cast<Player*>(i->get());
@@ -60,6 +61,13 @@ void Scene::update(float time) {
         //tree_shadow->position.x = tree_shadow->original_position.x - 0.5f;
     }
 
+    auto cow_shadow = dynamic_cast<Cow_shadow*>(i->get());
+    if(cow_shadow){
+        if(lightDirection.x > 0.5) {
+            cow_shadow->scale.y = 0.1f / (lightDirection.y * lightDirection.y);
+        }
+    }
+
     auto ground = dynamic_cast<Space*>(i->get());
     if(ground){
         if(ground->position.x - player_pos.x >= 90 ) {
@@ -79,7 +87,6 @@ void Scene::update(float time) {
 
     auto generator = dynamic_cast<Generator*>(i->get());
 
-
     auto obj = i->get();
 
     if(!ground &&  !generator && (abs(obj->position.x - player_pos.x) >= 80 || abs(obj->position.z - player_pos.z) >= 80)){ // Remove objects that are too distant
@@ -89,7 +96,7 @@ void Scene::update(float time) {
     }
 
     if (!obj->update(*this, time))
-      i = objects.erase(i); // NOTE: no need to call destructors as we store shared pointers in the scene
+      i = objects.erase(i);
     else
       ++i;
   }
@@ -97,8 +104,25 @@ void Scene::update(float time) {
 
 void Scene::render() {
   // Simply render all objects
-  for ( auto& obj : objects )
-    obj->render(*this);
+  Projectile *beam = nullptr;
+  auto i = std::begin(objects);
+  while (i != std::end(objects)){
+      auto beam_holder = dynamic_cast<Projectile*>(i->get());
+      if(beam_holder) {
+          beam = beam_holder;
+          i++;
+          continue;
+      }
+      auto obj = i->get();
+      obj->render(*this);
+      i++;
+  }
+  if(beam){
+      beam->render(*this);
+  }
+  /*for ( auto& obj : objects ) {
+      obj->render(*this);
+  }*/
 }
 
 std::vector<Object*> Scene::intersect(const glm::vec3 &position, const glm::vec3 &direction) {

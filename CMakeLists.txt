@@ -40,6 +40,12 @@ find_package(GLEW REQUIRED)
 find_package(GLM REQUIRED)
 find_package(OpenGL REQUIRED)
 
+# Optional packages
+find_package(OpenMP)
+if(OPENMP_FOUND)
+    list(APPEND CMAKE_CXX_FLAGS ${OpenMP_CXX_FLAGS})
+endif()
+
 #
 # Shaders / Materials
 #
@@ -68,7 +74,7 @@ add_library(ppgso STATIC
 target_compile_definitions(ppgso PUBLIC -DGLM_FORCE_RADIANS -DGLEW_STATIC)
 
 # Link to GLFW, GLEW and OpenGL
-target_link_libraries(ppgso PUBLIC ${GLFW_LIBRARIES} GLEW::GLEW ${OPENGL_LIBRARIES})
+target_link_libraries(ppgso PUBLIC ${GLFW_LIBRARIES} GLEW::GLEW ${OPENGL_LIBRARIES} ${OpenMP_libomp_LIBRARY})
 # Pass on include directories
 target_include_directories(ppgso PUBLIC
         ppgso
@@ -100,6 +106,7 @@ add_executable(gl9_scene
         src/gl9_scene/scene.cpp
         src/gl9_scene/camera.cpp
         src/gl9_scene/asteroid.cpp
+        src/gl9_scene/cow_shadow.cpp
         src/gl9_scene/generator.cpp
         src/gl9_scene/player.cpp
         src/gl9_scene/projectile.cpp

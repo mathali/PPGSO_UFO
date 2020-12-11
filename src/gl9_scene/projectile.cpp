@@ -36,7 +36,6 @@ bool Projectile::update(Scene &scene, float dt) {
 
   // Die after 5s
   if (age > 5.0f ) return false;//|| position.y < -10.0f) return false;
-
   generateModelMatrix();
   return true;
 }

@@ -19,7 +19,7 @@ Asteroid::Asteroid() {
   // Set random scale speed and rotation
   scale *=  0.2f;//glm::linearRand(1.0f, 3.0f);
   speed = {0.0f, -9.81f, 0.0f};
-  rotation = {0, 0, glm::linearRand(-3.0f, 3.0f)};
+  rotation = {0, 0, glm::linearRand(-ppgso::PI, ppgso::PI)};
   rotMomentum = glm::ballRand(ppgso::PI);
 
   // Initialize static resources if needed
@@ -45,7 +45,6 @@ bool Asteroid::update(Scene &scene, float dt) { //TODO: Figure out why cows some
   float temp_position = position.y;
   float org_x = position.x;
   float org_z = position.z;
-  bool keep = true;
   // Collide with scene
   for (auto &obj : scene.objects) {
     // Ignore self in scene

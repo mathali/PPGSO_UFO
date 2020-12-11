@@ -84,7 +84,7 @@ bool Player::update(Scene &scene, float dt) {
   }
 
   // Firing projectiles
-  if(scene.keyboard[GLFW_KEY_SPACE] && fireDelay > fireRate) {  //TODO: Doesn't detect space if UP and LEFT
+  if(scene.keyboard[GLFW_KEY_SPACE] && fireDelay > fireRate) {
     // Reset fire delay
     fireDelay = 0;
     // Invert file offset

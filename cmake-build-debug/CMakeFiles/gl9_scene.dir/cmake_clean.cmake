@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj"
+  "CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj"

@@ -190,6 +190,15 @@ public:
     if (key == GLFW_KEY_3 && action == GLFW_PRESS) {
         scene.beam_color = {0, 0, 1};
     }
+    if (key == GLFW_KEY_UP) {
+        scene.camera->position.z += 0.1f;
+        scene.camera->position.y -= 0.1f;
+    }
+
+    if (key == GLFW_KEY_DOWN) {
+        scene.camera->position.z -= 0.1f;
+        scene.camera->position.y += 0.1f;
+    }
 
     // Pause
     if (key == GLFW_KEY_P && action == GLFW_PRESS) {

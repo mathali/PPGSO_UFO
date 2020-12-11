@@ -67,7 +67,7 @@ void main() {
     vec3 dir = normalize(BeamPos - FragPosition2);
     vec3 L = normalize(-BeamDirection);
     float spotCosine = dot(dir, L);
-    if(spotCosine >= BeamCutoff){
+    //if(spotCosine >= BeamCutoff){
       vec3 LightDir = normalize(BeamPos + FragPosition);
       vec3 ViewDir = normalize(ViewPosition - FragPosition);
       vec3 ReflectDir = reflect(-LightDir, norm);
@@ -83,6 +83,6 @@ void main() {
       vec3 diffuse = max(dot(vec4(norm, 1.0f), vec4(normalize(dir), 1.0f)), 0.0f) * Kd * attenuation * diffuse_strength;
 
       FragmentColor += vec4((diffuse) * BeamColor, 1.0f);
-    }
+    //}
   }
 }
