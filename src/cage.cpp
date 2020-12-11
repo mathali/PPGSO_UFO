@@ -18,18 +18,11 @@ Cage::Cage() {
 }
 
 bool Cage::update(Scene &scene, float dt) {
-    // Offset for UV mapping, creates illusion of scrolling
-    //textureOffset.y -= dt/5;
-    //position.y = -0.5;
-    //rotation = {1, 0, 0};
-    //scale *= 1.f;
     generateModelMatrix();
     return true;
 }
 
 void Cage::render(Scene &scene) {
-    // Disable writing to the depth buffer so we render a "background"
-    //glDepthMask(GL_FALSE);
 
     shader->use();
 
@@ -60,7 +53,6 @@ void Cage::render(Scene &scene) {
     shader->setUniform("Texture", *texture);
     mesh->render();
 
-    //glDepthMask(GL_TRUE);
 }
 
 // shared resources

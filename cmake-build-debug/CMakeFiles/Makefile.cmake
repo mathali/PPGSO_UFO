@@ -66,5 +66,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test.dir/DependInfo.cmake"
   "CMakeFiles/shaders.dir/DependInfo.cmake"
   "CMakeFiles/ppgso.dir/DependInfo.cmake"
-  "CMakeFiles/gl9_scene.dir/DependInfo.cmake"
+  "CMakeFiles/ufo_game.dir/DependInfo.cmake"
   )

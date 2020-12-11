@@ -1,20 +1,19 @@
 #include <glm/gtc/random.hpp>
 #include "scene.h"
-#include "projectile.h"
+#include "beam.h"
 
 #include <shaders/color_vert_glsl.h>
 #include <shaders/color_frag_glsl.h>
 
 
 // shared resources
-std::unique_ptr<ppgso::Mesh> Projectile::mesh;
-std::unique_ptr<ppgso::Shader> Projectile::shader;
-std::unique_ptr<ppgso::Texture> Projectile::texture;
+std::unique_ptr<ppgso::Mesh> Beam::mesh;
+std::unique_ptr<ppgso::Shader> Beam::shader;
+std::unique_ptr<ppgso::Texture> Beam::texture;
 
-Projectile::Projectile() {
+Beam::Beam() {
   // Set default speed
   speed = {0.0f, -3.0f, 0.0f};
-  rotMomentum = {0.0f, 0.0f, glm::linearRand(-ppgso::PI/4.0f, ppgso::PI/4.0f)};
   scale.y *= 2.0f;
 
   // Initialize static resources if needed
@@ -23,30 +22,17 @@ Projectile::Projectile() {
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("missile.obj");
 }
 
-bool Projectile::update(Scene &scene, float dt) {
-  // Increase age
-  /*age += dt;
-
-  // Accelerate
-  speed += glm::vec3{0.0f, -20.0f, 0.0f} * dt;
-  rotation += rotMomentum * dt;
-
-  // Move the projectile
-  position += speed * dt;*/
-
+bool Beam::update(Scene &scene, float dt) {
   // Die after 5s
   if (age > 5.0f ) return false;//|| position.y < -10.0f) return false;
   generateModelMatrix();
   return true;
 }
 
-void Projectile::render(Scene &scene) {
+void Beam::render(Scene &scene) {
 
   shader->use();
 
-  // Set up light
-  //shader->setUniform("LightDirection", scene.lightDirection);
-  //shader->setUniform("Transparency", 0.000001f);
   shader->setUniform("vertexColor", scene.beam_color);
 
   // use camera
@@ -55,13 +41,11 @@ void Projectile::render(Scene &scene) {
 
   // render mesh
   shader->setUniform("ModelMatrix", modelMatrix);
-  //shader->setUniform("Texture", *texture);
-
 
   mesh->render();
 }
 
-void Projectile::destroy() {
+void Beam::destroy() {
   // This will destroy the projectile on Update
   age = 100.0f;
 }

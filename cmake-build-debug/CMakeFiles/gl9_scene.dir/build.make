@@ -76,316 +76,300 @@ include CMakeFiles/gl9_scene.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/gl9_scene.dir/flags.make
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj: ../src/gl9_scene/gl9_scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\gl9_scene.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\gl9_scene.cpp"
+CMakeFiles/gl9_scene.dir/src/game_scene.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/game_scene.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/game_scene.cpp.obj: ../src/game_scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gl9_scene.dir/src/game_scene.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\game_scene.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\game_scene.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\gl9_scene.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\gl9_scene.cpp.i
+CMakeFiles/gl9_scene.dir/src/game_scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/game_scene.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\game_scene.cpp" > CMakeFiles\gl9_scene.dir\src\game_scene.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\gl9_scene.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\gl9_scene.cpp.s
+CMakeFiles/gl9_scene.dir/src/game_scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/game_scene.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\game_scene.cpp" -o CMakeFiles\gl9_scene.dir\src\game_scene.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj: ../src/gl9_scene/object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\object.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\object.cpp"
+CMakeFiles/gl9_scene.dir/src/object.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/object.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/object.cpp.obj: ../src/object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gl9_scene.dir/src/object.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\object.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\object.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\object.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\object.cpp.i
+CMakeFiles/gl9_scene.dir/src/object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/object.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\object.cpp" > CMakeFiles\gl9_scene.dir\src\object.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\object.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\object.cpp.s
+CMakeFiles/gl9_scene.dir/src/object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/object.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\object.cpp" -o CMakeFiles\gl9_scene.dir\src\object.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj: ../src/gl9_scene/scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\scene.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\scene.cpp"
+CMakeFiles/gl9_scene.dir/src/scene.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/scene.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/scene.cpp.obj: ../src/scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gl9_scene.dir/src/scene.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\scene.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\scene.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\scene.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\scene.cpp.i
+CMakeFiles/gl9_scene.dir/src/scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/scene.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\scene.cpp" > CMakeFiles\gl9_scene.dir\src\scene.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\scene.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\scene.cpp.s
+CMakeFiles/gl9_scene.dir/src/scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/scene.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\scene.cpp" -o CMakeFiles\gl9_scene.dir\src\scene.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj: ../src/gl9_scene/camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\camera.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\camera.cpp"
+CMakeFiles/gl9_scene.dir/src/camera.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/camera.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/camera.cpp.obj: ../src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gl9_scene.dir/src/camera.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\camera.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\camera.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\camera.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\camera.cpp.i
+CMakeFiles/gl9_scene.dir/src/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/camera.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\camera.cpp" > CMakeFiles\gl9_scene.dir\src\camera.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\camera.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\camera.cpp.s
+CMakeFiles/gl9_scene.dir/src/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/camera.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\camera.cpp" -o CMakeFiles\gl9_scene.dir\src\camera.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj: ../src/gl9_scene/asteroid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\asteroid.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\asteroid.cpp"
+CMakeFiles/gl9_scene.dir/src/cow.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/cow.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/cow.cpp.obj: ../src/cow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gl9_scene.dir/src/cow.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\cow.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cow.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\asteroid.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\asteroid.cpp.i
+CMakeFiles/gl9_scene.dir/src/cow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/cow.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cow.cpp" > CMakeFiles\gl9_scene.dir\src\cow.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\asteroid.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\asteroid.cpp.s
+CMakeFiles/gl9_scene.dir/src/cow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/cow.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cow.cpp" -o CMakeFiles\gl9_scene.dir\src\cow.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj: ../src/gl9_scene/cow_shadow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\cow_shadow.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\cow_shadow.cpp"
+CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.obj: ../src/cow_shadow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\cow_shadow.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cow_shadow.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\cow_shadow.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\cow_shadow.cpp.i
+CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cow_shadow.cpp" > CMakeFiles\gl9_scene.dir\src\cow_shadow.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\cow_shadow.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\cow_shadow.cpp.s
+CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cow_shadow.cpp" -o CMakeFiles\gl9_scene.dir\src\cow_shadow.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj: ../src/gl9_scene/generator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\generator.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\generator.cpp"
+CMakeFiles/gl9_scene.dir/src/generator.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/generator.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/generator.cpp.obj: ../src/generator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gl9_scene.dir/src/generator.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\generator.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\generator.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\generator.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\generator.cpp.i
+CMakeFiles/gl9_scene.dir/src/generator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/generator.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\generator.cpp" > CMakeFiles\gl9_scene.dir\src\generator.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\generator.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\generator.cpp.s
+CMakeFiles/gl9_scene.dir/src/generator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/generator.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\generator.cpp" -o CMakeFiles\gl9_scene.dir\src\generator.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj: ../src/gl9_scene/player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\player.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\player.cpp"
+CMakeFiles/gl9_scene.dir/src/player.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/player.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/player.cpp.obj: ../src/player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gl9_scene.dir/src/player.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\player.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\player.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\player.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\player.cpp.i
+CMakeFiles/gl9_scene.dir/src/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/player.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\player.cpp" > CMakeFiles\gl9_scene.dir\src\player.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\player.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\player.cpp.s
+CMakeFiles/gl9_scene.dir/src/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/player.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\player.cpp" -o CMakeFiles\gl9_scene.dir\src\player.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj: ../src/gl9_scene/projectile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\projectile.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\projectile.cpp"
+CMakeFiles/gl9_scene.dir/src/beam.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/beam.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/beam.cpp.obj: ../src/beam.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gl9_scene.dir/src/beam.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\beam.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\beam.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\projectile.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\projectile.cpp.i
+CMakeFiles/gl9_scene.dir/src/beam.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/beam.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\beam.cpp" > CMakeFiles\gl9_scene.dir\src\beam.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\projectile.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\projectile.cpp.s
+CMakeFiles/gl9_scene.dir/src/beam.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/beam.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\beam.cpp" -o CMakeFiles\gl9_scene.dir\src\beam.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj: ../src/gl9_scene/explosion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\explosion.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\explosion.cpp"
+CMakeFiles/gl9_scene.dir/src/explosion.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/explosion.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/explosion.cpp.obj: ../src/explosion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gl9_scene.dir/src/explosion.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\explosion.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\explosion.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\explosion.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\explosion.cpp.i
+CMakeFiles/gl9_scene.dir/src/explosion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/explosion.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\explosion.cpp" > CMakeFiles\gl9_scene.dir\src\explosion.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\explosion.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\explosion.cpp.s
+CMakeFiles/gl9_scene.dir/src/explosion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/explosion.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\explosion.cpp" -o CMakeFiles\gl9_scene.dir\src\explosion.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj: ../src/gl9_scene/space.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\space.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\space.cpp"
+CMakeFiles/gl9_scene.dir/src/ground.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/ground.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/ground.cpp.obj: ../src/ground.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gl9_scene.dir/src/ground.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\ground.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\ground.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\space.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\space.cpp.i
+CMakeFiles/gl9_scene.dir/src/ground.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/ground.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\ground.cpp" > CMakeFiles\gl9_scene.dir\src\ground.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\space.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\space.cpp.s
+CMakeFiles/gl9_scene.dir/src/ground.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/ground.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\ground.cpp" -o CMakeFiles\gl9_scene.dir\src\ground.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.obj: ../src/gl9_scene/house.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\house.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\house.cpp"
+CMakeFiles/gl9_scene.dir/src/house.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/house.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/house.cpp.obj: ../src/house.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/gl9_scene.dir/src/house.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\house.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\house.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\house.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\house.cpp.i
+CMakeFiles/gl9_scene.dir/src/house.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/house.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\house.cpp" > CMakeFiles\gl9_scene.dir\src\house.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\house.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\house.cpp.s
+CMakeFiles/gl9_scene.dir/src/house.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/house.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\house.cpp" -o CMakeFiles\gl9_scene.dir\src\house.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj: ../src/gl9_scene/house_shadow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\house_shadow.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\house_shadow.cpp"
+CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.obj: ../src/house_shadow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\house_shadow.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\house_shadow.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\house_shadow.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\house_shadow.cpp.i
+CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\house_shadow.cpp" > CMakeFiles\gl9_scene.dir\src\house_shadow.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\house_shadow.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\house_shadow.cpp.s
+CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\house_shadow.cpp" -o CMakeFiles\gl9_scene.dir\src\house_shadow.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.obj: ../src/gl9_scene/tree1_1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\tree1_1.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree1_1.cpp"
+CMakeFiles/gl9_scene.dir/src/tree.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/tree.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/tree.cpp.obj: ../src/tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/gl9_scene.dir/src/tree.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\tree.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\tree.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree1_1.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\tree1_1.cpp.i
+CMakeFiles/gl9_scene.dir/src/tree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/tree.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\tree.cpp" > CMakeFiles\gl9_scene.dir\src\tree.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree1_1.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\tree1_1.cpp.s
+CMakeFiles/gl9_scene.dir/src/tree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/tree.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\tree.cpp" -o CMakeFiles\gl9_scene.dir\src\tree.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj: ../src/gl9_scene/tree_shadow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\tree_shadow.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree_shadow.cpp"
+CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.obj: ../src/tree_shadow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\tree_shadow.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\tree_shadow.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree_shadow.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\tree_shadow.cpp.i
+CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\tree_shadow.cpp" > CMakeFiles\gl9_scene.dir\src\tree_shadow.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree_shadow.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\tree_shadow.cpp.s
+CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\tree_shadow.cpp" -o CMakeFiles\gl9_scene.dir\src\tree_shadow.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.obj: ../src/gl9_scene/tree1_2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\tree1_2.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree1_2.cpp"
+CMakeFiles/gl9_scene.dir/src/grass.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/grass.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/grass.cpp.obj: ../src/grass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/gl9_scene.dir/src/grass.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\grass.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\grass.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree1_2.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\tree1_2.cpp.i
+CMakeFiles/gl9_scene.dir/src/grass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/grass.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\grass.cpp" > CMakeFiles\gl9_scene.dir\src\grass.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\tree1_2.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\tree1_2.cpp.s
+CMakeFiles/gl9_scene.dir/src/grass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/grass.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\grass.cpp" -o CMakeFiles\gl9_scene.dir\src\grass.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.obj: ../src/gl9_scene/grass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\grass.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\grass.cpp"
+CMakeFiles/gl9_scene.dir/src/room_wall.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/room_wall.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/room_wall.cpp.obj: ../src/room_wall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/gl9_scene.dir/src/room_wall.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\room_wall.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\room_wall.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\grass.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\grass.cpp.i
+CMakeFiles/gl9_scene.dir/src/room_wall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/room_wall.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\room_wall.cpp" > CMakeFiles\gl9_scene.dir\src\room_wall.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\grass.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\grass.cpp.s
+CMakeFiles/gl9_scene.dir/src/room_wall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/room_wall.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\room_wall.cpp" -o CMakeFiles\gl9_scene.dir\src\room_wall.cpp.s
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.obj: ../src/gl9_scene/room_wall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\room_wall.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\room_wall.cpp"
+CMakeFiles/gl9_scene.dir/src/cage.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/cage.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/cage.cpp.obj: ../src/cage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/gl9_scene.dir/src/cage.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\cage.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cage.cpp"
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\room_wall.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\room_wall.cpp.i
+CMakeFiles/gl9_scene.dir/src/cage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/cage.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cage.cpp" > CMakeFiles\gl9_scene.dir\src\cage.cpp.i
 
-CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\room_wall.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\room_wall.cpp.s
-
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj: ../src/gl9_scene/cage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\cage.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\cage.cpp"
-
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\cage.cpp" > CMakeFiles\gl9_scene.dir\src\gl9_scene\cage.cpp.i
-
-CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\gl9_scene\cage.cpp" -o CMakeFiles\gl9_scene.dir\src\gl9_scene\cage.cpp.s
+CMakeFiles/gl9_scene.dir/src/cage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/cage.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\src\cage.cpp" -o CMakeFiles\gl9_scene.dir\src\cage.cpp.s
 
 # Object files for target gl9_scene
 gl9_scene_OBJECTS = \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj"
+"CMakeFiles/gl9_scene.dir/src/game_scene.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/object.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/scene.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/camera.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/cow.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/generator.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/player.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/beam.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/explosion.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/ground.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/house.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/tree.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/grass.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/room_wall.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/cage.cpp.obj"
 
 # External object files for target gl9_scene
 gl9_scene_EXTERNAL_OBJECTS =
 
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.obj
-gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/game_scene.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/object.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/scene.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/camera.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/cow.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/cow_shadow.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/generator.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/player.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/beam.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/explosion.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/ground.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/house.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/house_shadow.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/tree.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/tree_shadow.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/grass.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/room_wall.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/cage.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/build.make
 gl9_scene.exe: libppgso.a
 gl9_scene.exe: libshaders.a
@@ -394,7 +378,7 @@ gl9_scene.exe: ../dependencies/lib/mingw/libglew32.a
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/linklibs.rsp
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/objects1.rsp
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable gl9_scene.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable gl9_scene.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gl9_scene.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,7 +6,7 @@
 /*!
  * Object representing a rocket projectile that will accelerate from the ship one created
  */
-class Projectile final : public Object {
+class Beam final : public Object {
 private:
   static std::unique_ptr<ppgso::Shader> shader;
   static std::unique_ptr<ppgso::Mesh> mesh;
@@ -14,12 +14,11 @@ private:
 
   float age{0.0f};
   glm::vec3 speed;
-  glm::vec3 rotMomentum;
 public:
   /*
    * Create new projectile
    */
-  Projectile();
+  Beam();
 
   /*!
    * Update projectile position

@@ -1,7 +1,7 @@
 #include "player.h"
 #include "scene.h"
-#include "asteroid.h"
-#include "projectile.h"
+#include "cow.h"
+#include "beam.h"
 #include "explosion.h"
 
 #include <shaders/diffuse_vert_glsl.h>
@@ -33,22 +33,10 @@ bool Player::update(Scene &scene, float dt) {
     if (obj.get() == this)
       continue;
 
-    // We only need to collide with asteroids, ignore other objects
-    auto asteroid = dynamic_cast<Asteroid*>(obj.get());
-    auto projectile = dynamic_cast<Projectile*>(obj.get());
-    if (!asteroid && !projectile) continue;
+    auto beam = dynamic_cast<Beam*>(obj.get());
 
-    if (asteroid && distance(position, asteroid->position) < asteroid->scale.y) {
-      // Explode
-      /*auto explosion = std::make_unique<Explosion>();
-      explosion->position = position;
-      explosion->scale = scale * 3.0f;
-      scene.objects.push_back(move(explosion));
-
-      // Die
-      return false;*/
-    }else if (projectile){
-        projectile->position = position - glm::vec3(0.0f, 6.2f, -4.3f); // + fireOffset
+    if (beam){
+        beam->position = position - glm::vec3(0.0f, 6.2f, -4.3f); // + fireOffset
     }
   }
 
@@ -83,24 +71,24 @@ bool Player::update(Scene &scene, float dt) {
     rotation.x = 0;
   }
 
-  // Firing projectiles
+  // Firing beams
   if(scene.keyboard[GLFW_KEY_SPACE] && fireDelay > fireRate) {
     // Reset fire delay
     fireDelay = 0;
     // Invert file offset
     fireOffset = -fireOffset;
     if(!beam_flag) {
-        auto projectile = std::make_unique<Projectile>();
-        projectile->position = position - glm::vec3(0.0f, 6.2f, -4.3f); // + fireOffset
-        scene.objects.push_back(move(projectile));
+        auto beam = std::make_unique<Beam>();
+        beam->position = position - glm::vec3(0.0f, 6.2f, -4.3f); // + fireOffset
+        scene.objects.push_back(move(beam));
         beam_flag = true;
     }else{
         for ( auto& obj : scene.objects ) {
             if (obj.get() == this)
                 continue;
-            auto projectile = dynamic_cast<Projectile*>(obj.get());
-            if (!projectile) continue;
-            projectile->destroy();
+            auto beam = dynamic_cast<Beam*>(obj.get());
+            if (!beam) continue;
+            beam->destroy();
         }
         beam_flag = false;
     }
@@ -135,6 +123,3 @@ void Player::render(Scene &scene) {
   mesh->render();
 }
 
-void Player::onClick(Scene &scene) {
-  std::cout << "Player has been clicked!" << std::endl;
-}

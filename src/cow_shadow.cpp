@@ -10,7 +10,7 @@ std::unique_ptr<ppgso::Mesh> Cow_shadow::mesh;
 std::unique_ptr<ppgso::Texture> Cow_shadow::texture;
 std::unique_ptr<ppgso::Shader> Cow_shadow::shader;
 
-Cow_shadow::Cow_shadow(std::shared_ptr<Asteroid> par) {
+Cow_shadow::Cow_shadow(std::shared_ptr<Cow> par) {
     // Set random scale speed and rotation
     scale *=  0.2f;
     scale.x = 0.02f;
@@ -26,6 +26,7 @@ Cow_shadow::Cow_shadow(std::shared_ptr<Asteroid> par) {
 
 bool Cow_shadow::update(Scene &scene, float dt) {
     if (!parent->keep || parent->position.y > -4.5f) return false;
+    caught = parent->caught;
     if(scene.lightDirection.x < 0.5f && scene.lightDirection.x > -0.5f) {
         scale.x = 0.2f;
         scale.y = 0.02f;
@@ -49,6 +50,7 @@ bool Cow_shadow::update(Scene &scene, float dt) {
 }
 
 void Cow_shadow::render(Scene &scene) {
+    if(caught)return;
     shader->use();
 
     // Set up light

@@ -100,25 +100,24 @@ target_include_directories(test PUBLIC
         ${CMAKE_SOURCE_DIR}
         ${CMAKE_CURRENT_BINARY_DIR})
 
-add_executable(gl9_scene
-        src/gl9_scene/gl9_scene.cpp
-        src/gl9_scene/object.cpp
-        src/gl9_scene/scene.cpp
-        src/gl9_scene/camera.cpp
-        src/gl9_scene/asteroid.cpp
-        src/gl9_scene/cow_shadow.cpp
-        src/gl9_scene/generator.cpp
-        src/gl9_scene/player.cpp
-        src/gl9_scene/projectile.cpp
-        src/gl9_scene/explosion.cpp
-        src/gl9_scene/space.cpp
-        src/gl9_scene/house.cpp
-        src/gl9_scene/house_shadow.cpp
-        src/gl9_scene/tree1_1.cpp
-        src/gl9_scene/tree_shadow.cpp
-        src/gl9_scene/tree1_2.cpp
-        src/gl9_scene/grass.cpp
-        src/gl9_scene/room_wall.cpp
-        src/gl9_scene/cage.cpp)
-target_link_libraries(gl9_scene ppgso shaders)
-install(TARGETS gl9_scene DESTINATION .)
+add_executable(ufo_game
+        src/game_scene.cpp
+        src/object.cpp
+        src/scene.cpp
+        src/camera.cpp
+        src/cow.cpp
+        src/cow_shadow.cpp
+        src/generator.cpp
+        src/player.cpp
+        src/beam.cpp
+        src/explosion.cpp
+        src/ground.cpp
+        src/house.cpp
+        src/house_shadow.cpp
+        src/tree.cpp
+        src/tree_shadow.cpp
+        src/grass.cpp
+        src/room_wall.cpp
+        src/cage.cpp)
+target_link_libraries(ufo_game ppgso shaders)
+install(TARGETS ufo_game DESTINATION .)

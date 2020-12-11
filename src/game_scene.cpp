@@ -1,8 +1,8 @@
 // Example gl_scene
 // - Introduces the concept of a dynamic scene of objects
 // - Uses abstract object interface for Update and Render steps
-// - Creates a simple game scene with Player, Asteroid and Space objects
-// - Contains a generator object that does not render but adds Asteroids to the scene
+// - Creates a simple game scene with Player, Cow and Ground objects
+// - Contains a generator object that does not render but adds Cows to the scene
 // - Some objects use shared resources and all object deallocations are handled automatically
 // - Controls: LEFT, RIGHT, "R" to reset, SPACE to fire
 
@@ -18,8 +18,8 @@
 #include "scene.h"
 #include "generator.h"
 #include "player.h"
-#include "space.h"
-#include "asteroid.h"
+#include "ground.h"
+#include "cow.h"
 #include "room_wall.h"
 #include "cage.h"
 
@@ -53,22 +53,22 @@ private:
     camera->secondScene = false;
     scene.camera = move(camera);
 
-    // Add space background
+    // Add ground background
 
-    float space_pos;
+    float ground_pos;
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
-            auto space = std::make_unique<Space>();
-            space->position = {j*40 - 80, -10.8, i*40 - 40};
-            space_pos = space->position.y;
-            scene.objects.push_back(move(space));
+            auto ground = std::make_unique<Ground>();
+            ground->position = {j*40 - 80, -10.8, i*40 - 40};
+            ground_pos = ground->position.y;
+            scene.objects.push_back(move(ground));
         }
     }
 
 
     // Add generator to scene
     auto generator = std::make_unique<Generator>();
-    generator->position = {0, space_pos + 0.8f, 0};
+    generator->position = {0, ground_pos + 0.8f, 0};
     scene.objects.push_back(move(generator));
 
     // Add player to the scene
@@ -90,6 +90,21 @@ private:
       camera->back = {camera->position.x, 0, camera->position.z};
       scene.camera = move(camera);
 
+      for(int j = 0; j < 4; j++)
+          for(int i = 0; i < 7; i++) {
+              auto cage = std::make_unique<Cage>();
+              cage->position = {15 + -5*i, 1, j*10 - 15};
+              scene.objects.push_back(move(cage));
+
+              if(scene.captured > 0) {
+                  auto cow = std::make_unique<Cow>();
+                  cow->position = {15 + -5 * i + 2.2, 3.5, j * 10 - 15 - 2.2};
+                  cow->scale = {0.5, 0.5, 0.5};
+                  cow->rotation = {0, 0, 0};
+                  scene.objects.push_back(move(cow));
+                  scene.captured--;
+              }
+          }
       auto floor = std::make_unique<Room_wall>();
       floor->position = {0, 0, 0};
       scene.objects.push_back(move(floor));
@@ -113,22 +128,6 @@ private:
       side3->position = {-20, 10, 0};
       side3->rotation = {-ppgso::PI, ppgso::PI, 3*ppgso::PI/2};
       scene.objects.push_back(move(side3));
-
-      for(int j = 0; j < 4; j++)
-      for(int i = 0; i < 7; i++) {
-          auto cage = std::make_unique<Cage>();
-          cage->position = {15 + -5*i, 1, j*10 - 15};
-          scene.objects.push_back(move(cage));
-
-          if(scene.captured > 0) {
-              auto cow = std::make_unique<Asteroid>();
-              cow->position = {15 + -5 * i + 2.2, 3.5, j * 10 - 15 - 2.2};
-              cow->scale = {0.5, 0.5, 0.5};
-              cow->rotation = {0, 0, 0};
-              scene.objects.push_back(move(cow));
-              scene.captured--;
-          }
-      }
 
       auto side4 = std::make_unique<Room_wall>();
       side4->position = {0, 10, -20};
@@ -206,51 +205,6 @@ public:
     }
   }
 
-  /*!
-   * Handle cursor position changes
-   * @param cursorX Mouse horizontal position in window coordinates
-   * @param cursorY Mouse vertical position in window coordinates
-   */
-  void onCursorPos(double cursorX, double cursorY) override {
-    scene.cursor.x = cursorX;
-    scene.cursor.y = cursorY;
-  }
-
-  /*!
-   * Handle cursor buttons
-   * @param button Mouse button being manipulated
-   * @param action Mouse bu
-   * @param mods
-   */
-  void onMouseButton(int button, int action, int mods) override {
-    if(button == GLFW_MOUSE_BUTTON_LEFT) {
-      scene.cursor.left = action == GLFW_PRESS;
-
-      if (scene.cursor.left) {
-        // Convert pixel coordinates to Screen coordinates
-        double u = (scene.cursor.x / width - 0.5f) * 2.0f;
-        double v = - (scene.cursor.y / height - 0.5f) * 2.0f;
-
-        // Get mouse pick vector in world coordinates
-        auto direction = scene.camera->cast(u, v);
-        auto position = scene.camera->position;
-
-        // Get all objects in scene intersected by ray
-        auto picked = scene.intersect(position, direction);
-
-        // Go through all objects that have been picked
-        for (auto &obj: picked) {
-          // Pass on the click event
-          obj->onClick(scene);
-        }
-      }
-    }
-    if(button == GLFW_MOUSE_BUTTON_RIGHT) {
-      scene.cursor.right = action == GLFW_PRESS;
-    }
-  }
-
-
     glm::mat4 bezierPoint(const glm::mat4 CP0,const glm::mat4 CP1,const glm::mat4 CP2 , float t) {
         glm::mat4 out;
         glm::mat4 supp1_1 = glm::interpolate(CP0, CP1, t);
@@ -279,7 +233,7 @@ public:
 
 
     // Update and render all objects
-    if(scene.timer < 100.0f || scene.secondScene) {
+    if(scene.timer < 30.0f || scene.secondScene) {
         scene.update(dt);
         scene.render();
         if(scene.secondScene){

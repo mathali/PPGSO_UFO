@@ -1,4 +1,4 @@
-#include "space.h"
+#include "ground.h"
 #include "scene.h"
 
 #include <shaders/diffuse_vert_glsl.h>
@@ -6,7 +6,7 @@
 
 
 
-Space::Space() {
+Ground::Ground() {
   // Initialize static resources if needed
 
   position = {0, -12, 0};
@@ -17,19 +17,12 @@ Space::Space() {
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("quad.obj");
 }
 
-bool Space::update(Scene &scene, float dt) {
-  // Offset for UV mapping, creates illusion of scrolling
-  //textureOffset.y -= dt/5;
-  //position.y = -0.5;
-  //rotation = {1, 0, 0};
-  //scale *= 1.f;
+bool Ground::update(Scene &scene, float dt) {
   generateModelMatrix();
   return true;
 }
 
-void Space::render(Scene &scene) {
-  // Disable writing to the depth buffer so we render a "background"
-  //glDepthMask(GL_FALSE);
+void Ground::render(Scene &scene) {
 
     shader->use();
 
@@ -60,10 +53,9 @@ void Space::render(Scene &scene) {
     shader->setUniform("Texture", *texture);
     mesh->render();
 
-  //glDepthMask(GL_TRUE);
 }
 
 // shared resources
-std::unique_ptr<ppgso::Mesh> Space::mesh;
-std::unique_ptr<ppgso::Shader> Space::shader;
-std::unique_ptr<ppgso::Texture> Space::texture;
+std::unique_ptr<ppgso::Mesh> Ground::mesh;
+std::unique_ptr<ppgso::Shader> Ground::shader;
+std::unique_ptr<ppgso::Texture> Ground::texture;

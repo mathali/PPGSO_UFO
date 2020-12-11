@@ -1,9 +1,8 @@
 #include <glm/gtc/random.hpp>
-#include "asteroid.h"
-#include "projectile.h"
-#include "explosion.h"
+#include "cow.h"
+#include "beam.h"
 #include "grass.h"
-#include "tree1_1.h"
+#include "tree.h"
 #include "house.h"
 
 #include <shaders/diffuse_vert_glsl.h>
@@ -11,13 +10,13 @@
 
 
 // Static resources
-std::unique_ptr<ppgso::Mesh> Asteroid::mesh;
-std::unique_ptr<ppgso::Texture> Asteroid::texture;
-std::unique_ptr<ppgso::Shader> Asteroid::shader;
+std::unique_ptr<ppgso::Mesh> Cow::mesh;
+std::unique_ptr<ppgso::Texture> Cow::texture;
+std::unique_ptr<ppgso::Shader> Cow::shader;
 
-Asteroid::Asteroid() {
+Cow::Cow() {
   // Set random scale speed and rotation
-  scale *=  0.2f;//glm::linearRand(1.0f, 3.0f);
+  scale *=  0.2f;
   speed = {0.0f, -9.81f, 0.0f};
   rotation = {0, 0, glm::linearRand(-ppgso::PI, ppgso::PI)};
   rotMomentum = glm::ballRand(ppgso::PI);
@@ -25,21 +24,10 @@ Asteroid::Asteroid() {
   // Initialize static resources if needed
   if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
   if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("Bull_texture.bmp"));
-  //if (!texture_norm) texture_norm = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("cow_norm.bmp"));
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("bull.obj");
 }
 
-bool Asteroid::update(Scene &scene, float dt) { //TODO: Figure out why cows sometimes disappear after landing
-  // Count time alive
-  //age += dt;
-
-  // Animate position according to time
-  //position += speed * dt;
-
-  // Rotate the object
-  //rotation += rotMomentum * dt;
-
-  // Delete when alive longer than 10s or out of visibility
+bool Cow::update(Scene &scene, float dt) {
   if (position.y < height_limit)
       position.y = height_limit;
   float temp_position = position.y;
@@ -50,8 +38,8 @@ bool Asteroid::update(Scene &scene, float dt) { //TODO: Figure out why cows some
     // Ignore self in scene
     if (obj.get() == this) continue;
 
-    // We only need to collide with asteroids and projectiles, ignore other objects
-    auto house = dynamic_cast<House*>(obj.get()); // dynamic_pointer_cast<Asteroid>(obj);
+    // We only need to collide with asteroids and beams, ignore other objects
+    auto house = dynamic_cast<House*>(obj.get()); // dynamic_pointer_cast<Cow>(obj);
     if(house && caught && (abs(position.x - house->position.x) <= 3 && abs(position.z - house->position.z) <= 3)){
         for (int i = 0; i <= glm::linearRand(4, 6); i++) {
             float x_offset = glm::linearRand(0.2f, 0.9f);
@@ -64,43 +52,20 @@ bool Asteroid::update(Scene &scene, float dt) { //TODO: Figure out why cows some
         keep = false;
     }
 
-    auto house_shadow = dynamic_cast<House_shadow*>(obj.get()); // dynamic_pointer_cast<Asteroid>(obj);
+    auto house_shadow = dynamic_cast<House_shadow*>(obj.get()); // dynamic_pointer_cast<Cow>(obj);
     if(house_shadow && caught && (abs(position.x - house_shadow->position.x) <= 4 && abs(position.z - house_shadow->position.z) <= 4)){
         house_shadow->age = 100.0f;
     }
     if(!keep)return false;
-    auto projectile = dynamic_cast<Projectile*>(obj.get()); //dynamic_pointer_cast<Projectile>(obj);
-    //if (!projectile) continue;
-    /*if(projectile) {
-        std::cout << "Asteroid: " << position.x << " " << position.z << std::endl;
-        std::cout << "Projectile: " << abs(position.x - projectile->position.x) << " " << abs(position.z - (projectile->position.z-4))<< std::endl;
-    }*/
-
-    // When colliding with other asteroids make sure the object is older than .5s
-    // This prevents excessive collisions when asteroids explode.
-    //if (asteroid && age < 0.5f) continue;
-
-    /*auto player = dynamic_cast<Player*>(obj.get());
-    if(player && (abs(position.x - player->position.x) >= 80 || abs(position.z - player->position.z >= 80))){
-        return false;
-    }*/
+    auto beam = dynamic_cast<Beam*>(obj.get());
 
     // Compare distance to approximate size of the asteroid estimated from scale.
-    if (projectile && abs(position.x - projectile->position.x) < 1.0f && abs(position.z - (projectile->position.z-3.0)) < 1.2f){ //distance(position, obj->position) < (obj->scale.z + scale.z) * 0.7f) {
-      int pieces = 3;                                                                                                  //TODO: ORIGINAL -4
+    if (beam && abs(position.x - beam->position.x) < 1.0f && abs(position.z - (beam->position.z-3.0)) < 1.2f){
       caught = true;
-      // Too small to split into pieces
-      if (scale.y < 0.5) pieces = 0;
 
-      position.x = projectile->position.x;
-      position.z = projectile->position.z - 3.0;  //TODO: ORIGINAL -4
+      position.x = beam->position.x;
+      position.z = beam->position.z - 3.0;  //TODO: ORIGINAL -4
       position.y += 0.1f;
-
-      // The projectile will be destroyed
-      //if (projectile) projectile->destroy();
-
-      // Generate smaller asteroids
-      //explode(scene, (obj->position + position) / 2.0f, (obj->scale + scale) / 2.0f, pieces);
 
       // Destroy self
       if(position.y > -4.5f) {
@@ -177,27 +142,8 @@ bool Asteroid::update(Scene &scene, float dt) { //TODO: Figure out why cows some
   return true;
 }
 
-void Asteroid::explode(Scene &scene, glm::vec3 explosionPosition, glm::vec3 explosionScale, int pieces) {
-  // Generate explosion
-  auto explosion = std::make_unique<Explosion>();
-  explosion->position = explosionPosition;
-  explosion->scale = explosionScale;
-  explosion->speed = speed / 2.0f;
-  scene.objects.push_back(move(explosion));
 
-  // Generate smaller asteroids
-  for (int i = 0; i < pieces; i++) {
-    auto asteroid = std::make_unique<Asteroid>();
-    asteroid->speed = speed + glm::vec3(glm::linearRand(-3.0f, 3.0f), glm::linearRand(0.0f, -5.0f), 0.0f);;
-    asteroid->position = position;
-    asteroid->rotMomentum = rotMomentum;
-    float factor = (float) pieces / 2.0f;
-    asteroid->scale = scale / factor;
-    scene.objects.push_back(move(asteroid));
-  }
-}
-
-void Asteroid::render(Scene &scene) {
+void Cow::render(Scene &scene) {
   shader->use();
 
   // Set up light
@@ -229,14 +175,7 @@ void Asteroid::render(Scene &scene) {
   mesh->render();
 }
 
-void Asteroid::onClick(Scene &scene) {
-  std::cout << "Asteroid clicked!" << std::endl;
-  explode(scene, position, {10.0f, 10.0f, 10.0f}, 0 );
-  age = 10000;
-}
-
-
-void Asteroid::movementAnimation(Scene &scene, bool c_flag, float dt) {
+void Cow::movementAnimation(Scene &scene, bool c_flag, float dt) {
     if (c_flag) return;
     m_timer -= dt;
     float org_x = position.x;
@@ -271,9 +210,9 @@ void Asteroid::movementAnimation(Scene &scene, bool c_flag, float dt) {
         }
     }
     for (auto &obj : scene.objects) {
-        auto cow = dynamic_cast<Asteroid *>(obj.get());
+        auto cow = dynamic_cast<Cow *>(obj.get());
         auto house = dynamic_cast<House *>(obj.get());
-        auto tree = dynamic_cast<Tree1_1 *>(obj.get());
+        auto tree = dynamic_cast<Tree *>(obj.get());
         if (cow && ((abs(position.x - cow->position.x) >= 0.5f && abs(position.x - cow->position.x) <= 2) &&
                     (abs(position.z - cow->position.z) >= 0.5f && abs(position.z - cow->position.z) <= 2))) {
             position.x = org_x;

@@ -68,14 +68,14 @@ void main() {
     vec3 L = normalize(-BeamDirection);
     float spotCosine = dot(dir, L);
     //if(spotCosine >= BeamCutoff){
-      vec3 LightDir = normalize(BeamPos + FragPosition);
-      vec3 ViewDir = normalize(ViewPosition - FragPosition);
-      vec3 ReflectDir = reflect(-LightDir, norm);
+      vec3 LightDir = normalize(BeamPos + FragPosition2);
+      vec3 ViewDir = normalize(ViewPosition - FragPosition2);
+      vec3 ReflectDir = reflect(-dir, norm);
       vec3 Spec = pow(max(dot(ViewDir, ReflectDir), 0.0), 2) * Ks;
-      vec3 Specular = SpecularStrength * Spec;
 
       float dist = distance(BeamPos, FragPosition2);
       float attenuation = (1.0/(10.0f + 100.0f * dist +  5000.0f * dist * dist));
+      vec3 Specular = Spec * attenuation;
 
       // Compute diffuse lighting
       if(object == 2 || object == 3) float diffuse_strength = 20.0f;

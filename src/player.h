@@ -46,11 +46,5 @@ public:
    */
   void render(Scene &scene) override;
 
-
-  /*!
-   * Player click event
-   * @param scene
-   */
-  void onClick(Scene &scene) override ;
 };
 

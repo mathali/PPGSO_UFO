@@ -5,6 +5,6 @@ D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/install
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/install.dir
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/ppgso.dir
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/ufo_game.dir
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/list_install_components.dir
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/gl9_scene.dir
 D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/CMakeFiles/install/strip.dir

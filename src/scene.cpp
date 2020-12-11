@@ -1,11 +1,11 @@
 #include "scene.h"
 #include "player.h"
-#include "space.h"
+#include "ground.h"
 #include "generator.h"
 #include "house_shadow.h"
 #include "tree_shadow.h"
 #include "cow_shadow.h"
-#include "projectile.h"
+#include "beam.h"
 
 void Scene::update(float time) {
   camera->update();
@@ -68,7 +68,7 @@ void Scene::update(float time) {
         }
     }
 
-    auto ground = dynamic_cast<Space*>(i->get());
+    auto ground = dynamic_cast<Ground*>(i->get());
     if(ground){
         if(ground->position.x - player_pos.x >= 90 ) {
             ground->position.x = ground->position.x - 180;
@@ -104,10 +104,10 @@ void Scene::update(float time) {
 
 void Scene::render() {
   // Simply render all objects
-  Projectile *beam = nullptr;
+  Beam *beam = nullptr;
   auto i = std::begin(objects);
   while (i != std::end(objects)){
-      auto beam_holder = dynamic_cast<Projectile*>(i->get());
+      auto beam_holder = dynamic_cast<Beam*>(i->get());
       if(beam_holder) {
           beam = beam_holder;
           i++;

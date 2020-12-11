@@ -2,10 +2,9 @@
 #include <ppgso/ppgso.h>
 
 #include "generator.h"
-#include "asteroid.h"
+#include "cow.h"
 #include "house.h"
-#include "tree1_1.h"
-#include "tree1_2.h"
+#include "tree.h"
 #include "grass.h"
 #include "player.h"
 #include "house_shadow.h"
@@ -55,8 +54,6 @@ bool Generator::update(Scene &scene, float dt) {
               flag = true;
           }
           if(player){
-              //std::cout << "--------------" << std::endl;
-              //std::cout << abs(position.x - player->position.x) << " " << abs(position.z - player->position.z) << std::endl;
               break;
           }
       }
@@ -84,7 +81,7 @@ bool Generator::update(Scene &scene, float dt) {
                   occupied[i][j] = true;
               }
           }
-          auto obj = std::make_shared<Asteroid>();
+          auto obj = std::make_shared<Cow>();
           obj->position = position;
           obj->height_limit = position.y;
           obj->position.x = rand_x;
@@ -114,9 +111,7 @@ bool Generator::update(Scene &scene, float dt) {
           house_shadow->position = obj->position;
           house_shadow->original_position = obj->position;
           house_shadow->position.x += 1;
-          // shadow->position.y += 5;
           house_shadow->rotation.z = obj->rotation.z;
-          // shadow->rotation.y = -ppgso::PI/2;
           house_shadow->scale.y = 0.0005;
           scene.objects.push_back(move(obj));
           scene.objects.push_back(move(house_shadow));
@@ -133,28 +128,23 @@ bool Generator::update(Scene &scene, float dt) {
                   occupied[i][j] = true;
               }
           }
-          auto obj1 = std::make_unique<Tree1_1>();
+
+          auto obj1 = std::make_unique<Tree>();
           obj1->position.y = position.y;
           obj1->position.x = rand_x;
           obj1->position.z = rand_z;
+
           auto tree_shadow = std::make_unique<Tree_shadow>();
           tree_shadow->position.x = obj1->position.x-0.1f;
           tree_shadow->position.y = obj1->position.y;
           tree_shadow->position.z = obj1->position.z;
           tree_shadow->original_position = obj1->position;
-          //tree_shadow->position.x += 1;
-          // shadow->position.y += 5;
+
           tree_shadow->rotation.y = -ppgso::PI/2;
           tree_shadow->scale.x = 0.0005;
           tree_shadow->scale.y = -tree_shadow->scale.y;
           scene.objects.push_back(move(obj1));
           scene.objects.push_back(move(tree_shadow));
-
-          /*auto obj2 = std::make_unique<Tree1_2>();
-          obj2->position.y = position.y + 1.0;
-          obj2->position.x = rand_x;
-          obj2->position.z = rand_z;
-          scene.objects.push_back(move(obj2));*/
       }
       for( int x = 0; x < glm::linearRand(80, 120); x++) {
 

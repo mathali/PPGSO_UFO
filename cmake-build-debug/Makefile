@@ -215,17 +215,17 @@ ppgso/fast:
 .PHONY : ppgso/fast
 
 #=============================================================================
-# Target rules for targets named gl9_scene
+# Target rules for targets named ufo_game
 
 # Build rule for target.
-gl9_scene: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gl9_scene
-.PHONY : gl9_scene
+ufo_game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 ufo_game
+.PHONY : ufo_game
 
 # fast build rule for target.
-gl9_scene/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/build
-.PHONY : gl9_scene/fast
+ufo_game/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/build
+.PHONY : ufo_game/fast
 
 main.obj: main.cpp.obj
 
@@ -686,518 +686,491 @@ shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
 
-src/gl9_scene/asteroid.obj: src/gl9_scene/asteroid.cpp.obj
+src/beam.obj: src/beam.cpp.obj
 
-.PHONY : src/gl9_scene/asteroid.obj
-
-# target to build an object file
-src/gl9_scene/asteroid.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.obj
-.PHONY : src/gl9_scene/asteroid.cpp.obj
-
-src/gl9_scene/asteroid.i: src/gl9_scene/asteroid.cpp.i
-
-.PHONY : src/gl9_scene/asteroid.i
-
-# target to preprocess a source file
-src/gl9_scene/asteroid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.i
-.PHONY : src/gl9_scene/asteroid.cpp.i
-
-src/gl9_scene/asteroid.s: src/gl9_scene/asteroid.cpp.s
-
-.PHONY : src/gl9_scene/asteroid.s
-
-# target to generate assembly for a file
-src/gl9_scene/asteroid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/asteroid.cpp.s
-.PHONY : src/gl9_scene/asteroid.cpp.s
-
-src/gl9_scene/cage.obj: src/gl9_scene/cage.cpp.obj
-
-.PHONY : src/gl9_scene/cage.obj
+.PHONY : src/beam.obj
 
 # target to build an object file
-src/gl9_scene/cage.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.obj
-.PHONY : src/gl9_scene/cage.cpp.obj
+src/beam.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/beam.cpp.obj
+.PHONY : src/beam.cpp.obj
 
-src/gl9_scene/cage.i: src/gl9_scene/cage.cpp.i
+src/beam.i: src/beam.cpp.i
 
-.PHONY : src/gl9_scene/cage.i
+.PHONY : src/beam.i
 
 # target to preprocess a source file
-src/gl9_scene/cage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.i
-.PHONY : src/gl9_scene/cage.cpp.i
+src/beam.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/beam.cpp.i
+.PHONY : src/beam.cpp.i
 
-src/gl9_scene/cage.s: src/gl9_scene/cage.cpp.s
+src/beam.s: src/beam.cpp.s
 
-.PHONY : src/gl9_scene/cage.s
+.PHONY : src/beam.s
 
 # target to generate assembly for a file
-src/gl9_scene/cage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/cage.cpp.s
-.PHONY : src/gl9_scene/cage.cpp.s
+src/beam.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/beam.cpp.s
+.PHONY : src/beam.cpp.s
 
-src/gl9_scene/camera.obj: src/gl9_scene/camera.cpp.obj
+src/cage.obj: src/cage.cpp.obj
 
-.PHONY : src/gl9_scene/camera.obj
+.PHONY : src/cage.obj
 
 # target to build an object file
-src/gl9_scene/camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj
-.PHONY : src/gl9_scene/camera.cpp.obj
+src/cage.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cage.cpp.obj
+.PHONY : src/cage.cpp.obj
 
-src/gl9_scene/camera.i: src/gl9_scene/camera.cpp.i
+src/cage.i: src/cage.cpp.i
 
-.PHONY : src/gl9_scene/camera.i
+.PHONY : src/cage.i
 
 # target to preprocess a source file
-src/gl9_scene/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.i
-.PHONY : src/gl9_scene/camera.cpp.i
+src/cage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cage.cpp.i
+.PHONY : src/cage.cpp.i
 
-src/gl9_scene/camera.s: src/gl9_scene/camera.cpp.s
+src/cage.s: src/cage.cpp.s
 
-.PHONY : src/gl9_scene/camera.s
+.PHONY : src/cage.s
 
 # target to generate assembly for a file
-src/gl9_scene/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.s
-.PHONY : src/gl9_scene/camera.cpp.s
+src/cage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cage.cpp.s
+.PHONY : src/cage.cpp.s
 
-src/gl9_scene/cow_shadow.obj: src/gl9_scene/cow_shadow.cpp.obj
+src/camera.obj: src/camera.cpp.obj
 
-.PHONY : src/gl9_scene/cow_shadow.obj
+.PHONY : src/camera.obj
 
 # target to build an object file
-src/gl9_scene/cow_shadow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.obj
-.PHONY : src/gl9_scene/cow_shadow.cpp.obj
+src/camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/camera.cpp.obj
+.PHONY : src/camera.cpp.obj
 
-src/gl9_scene/cow_shadow.i: src/gl9_scene/cow_shadow.cpp.i
+src/camera.i: src/camera.cpp.i
 
-.PHONY : src/gl9_scene/cow_shadow.i
+.PHONY : src/camera.i
 
 # target to preprocess a source file
-src/gl9_scene/cow_shadow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.i
-.PHONY : src/gl9_scene/cow_shadow.cpp.i
+src/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
 
-src/gl9_scene/cow_shadow.s: src/gl9_scene/cow_shadow.cpp.s
+src/camera.s: src/camera.cpp.s
 
-.PHONY : src/gl9_scene/cow_shadow.s
+.PHONY : src/camera.s
 
 # target to generate assembly for a file
-src/gl9_scene/cow_shadow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/cow_shadow.cpp.s
-.PHONY : src/gl9_scene/cow_shadow.cpp.s
+src/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
 
-src/gl9_scene/explosion.obj: src/gl9_scene/explosion.cpp.obj
+src/cow.obj: src/cow.cpp.obj
 
-.PHONY : src/gl9_scene/explosion.obj
+.PHONY : src/cow.obj
 
 # target to build an object file
-src/gl9_scene/explosion.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.obj
-.PHONY : src/gl9_scene/explosion.cpp.obj
+src/cow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cow.cpp.obj
+.PHONY : src/cow.cpp.obj
 
-src/gl9_scene/explosion.i: src/gl9_scene/explosion.cpp.i
+src/cow.i: src/cow.cpp.i
 
-.PHONY : src/gl9_scene/explosion.i
+.PHONY : src/cow.i
 
 # target to preprocess a source file
-src/gl9_scene/explosion.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.i
-.PHONY : src/gl9_scene/explosion.cpp.i
+src/cow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cow.cpp.i
+.PHONY : src/cow.cpp.i
 
-src/gl9_scene/explosion.s: src/gl9_scene/explosion.cpp.s
+src/cow.s: src/cow.cpp.s
 
-.PHONY : src/gl9_scene/explosion.s
+.PHONY : src/cow.s
 
 # target to generate assembly for a file
-src/gl9_scene/explosion.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/explosion.cpp.s
-.PHONY : src/gl9_scene/explosion.cpp.s
+src/cow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cow.cpp.s
+.PHONY : src/cow.cpp.s
 
-src/gl9_scene/generator.obj: src/gl9_scene/generator.cpp.obj
+src/cow_shadow.obj: src/cow_shadow.cpp.obj
 
-.PHONY : src/gl9_scene/generator.obj
+.PHONY : src/cow_shadow.obj
 
 # target to build an object file
-src/gl9_scene/generator.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.obj
-.PHONY : src/gl9_scene/generator.cpp.obj
+src/cow_shadow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cow_shadow.cpp.obj
+.PHONY : src/cow_shadow.cpp.obj
 
-src/gl9_scene/generator.i: src/gl9_scene/generator.cpp.i
+src/cow_shadow.i: src/cow_shadow.cpp.i
 
-.PHONY : src/gl9_scene/generator.i
+.PHONY : src/cow_shadow.i
 
 # target to preprocess a source file
-src/gl9_scene/generator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.i
-.PHONY : src/gl9_scene/generator.cpp.i
+src/cow_shadow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cow_shadow.cpp.i
+.PHONY : src/cow_shadow.cpp.i
 
-src/gl9_scene/generator.s: src/gl9_scene/generator.cpp.s
+src/cow_shadow.s: src/cow_shadow.cpp.s
 
-.PHONY : src/gl9_scene/generator.s
+.PHONY : src/cow_shadow.s
 
 # target to generate assembly for a file
-src/gl9_scene/generator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/generator.cpp.s
-.PHONY : src/gl9_scene/generator.cpp.s
+src/cow_shadow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/cow_shadow.cpp.s
+.PHONY : src/cow_shadow.cpp.s
 
-src/gl9_scene/gl9_scene.obj: src/gl9_scene/gl9_scene.cpp.obj
+src/explosion.obj: src/explosion.cpp.obj
 
-.PHONY : src/gl9_scene/gl9_scene.obj
+.PHONY : src/explosion.obj
 
 # target to build an object file
-src/gl9_scene/gl9_scene.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj
-.PHONY : src/gl9_scene/gl9_scene.cpp.obj
+src/explosion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/explosion.cpp.obj
+.PHONY : src/explosion.cpp.obj
 
-src/gl9_scene/gl9_scene.i: src/gl9_scene/gl9_scene.cpp.i
+src/explosion.i: src/explosion.cpp.i
 
-.PHONY : src/gl9_scene/gl9_scene.i
+.PHONY : src/explosion.i
 
 # target to preprocess a source file
-src/gl9_scene/gl9_scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.i
-.PHONY : src/gl9_scene/gl9_scene.cpp.i
+src/explosion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/explosion.cpp.i
+.PHONY : src/explosion.cpp.i
 
-src/gl9_scene/gl9_scene.s: src/gl9_scene/gl9_scene.cpp.s
+src/explosion.s: src/explosion.cpp.s
 
-.PHONY : src/gl9_scene/gl9_scene.s
+.PHONY : src/explosion.s
 
 # target to generate assembly for a file
-src/gl9_scene/gl9_scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.s
-.PHONY : src/gl9_scene/gl9_scene.cpp.s
+src/explosion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/explosion.cpp.s
+.PHONY : src/explosion.cpp.s
 
-src/gl9_scene/grass.obj: src/gl9_scene/grass.cpp.obj
+src/game_scene.obj: src/game_scene.cpp.obj
 
-.PHONY : src/gl9_scene/grass.obj
+.PHONY : src/game_scene.obj
 
 # target to build an object file
-src/gl9_scene/grass.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.obj
-.PHONY : src/gl9_scene/grass.cpp.obj
+src/game_scene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/game_scene.cpp.obj
+.PHONY : src/game_scene.cpp.obj
 
-src/gl9_scene/grass.i: src/gl9_scene/grass.cpp.i
+src/game_scene.i: src/game_scene.cpp.i
 
-.PHONY : src/gl9_scene/grass.i
+.PHONY : src/game_scene.i
 
 # target to preprocess a source file
-src/gl9_scene/grass.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.i
-.PHONY : src/gl9_scene/grass.cpp.i
+src/game_scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/game_scene.cpp.i
+.PHONY : src/game_scene.cpp.i
 
-src/gl9_scene/grass.s: src/gl9_scene/grass.cpp.s
+src/game_scene.s: src/game_scene.cpp.s
 
-.PHONY : src/gl9_scene/grass.s
+.PHONY : src/game_scene.s
 
 # target to generate assembly for a file
-src/gl9_scene/grass.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/grass.cpp.s
-.PHONY : src/gl9_scene/grass.cpp.s
+src/game_scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/game_scene.cpp.s
+.PHONY : src/game_scene.cpp.s
 
-src/gl9_scene/house.obj: src/gl9_scene/house.cpp.obj
+src/generator.obj: src/generator.cpp.obj
 
-.PHONY : src/gl9_scene/house.obj
+.PHONY : src/generator.obj
 
 # target to build an object file
-src/gl9_scene/house.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.obj
-.PHONY : src/gl9_scene/house.cpp.obj
+src/generator.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/generator.cpp.obj
+.PHONY : src/generator.cpp.obj
 
-src/gl9_scene/house.i: src/gl9_scene/house.cpp.i
+src/generator.i: src/generator.cpp.i
 
-.PHONY : src/gl9_scene/house.i
+.PHONY : src/generator.i
 
 # target to preprocess a source file
-src/gl9_scene/house.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.i
-.PHONY : src/gl9_scene/house.cpp.i
+src/generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/generator.cpp.i
+.PHONY : src/generator.cpp.i
 
-src/gl9_scene/house.s: src/gl9_scene/house.cpp.s
+src/generator.s: src/generator.cpp.s
 
-.PHONY : src/gl9_scene/house.s
+.PHONY : src/generator.s
 
 # target to generate assembly for a file
-src/gl9_scene/house.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house.cpp.s
-.PHONY : src/gl9_scene/house.cpp.s
+src/generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/generator.cpp.s
+.PHONY : src/generator.cpp.s
 
-src/gl9_scene/house_shadow.obj: src/gl9_scene/house_shadow.cpp.obj
+src/grass.obj: src/grass.cpp.obj
 
-.PHONY : src/gl9_scene/house_shadow.obj
+.PHONY : src/grass.obj
 
 # target to build an object file
-src/gl9_scene/house_shadow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.obj
-.PHONY : src/gl9_scene/house_shadow.cpp.obj
+src/grass.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/grass.cpp.obj
+.PHONY : src/grass.cpp.obj
 
-src/gl9_scene/house_shadow.i: src/gl9_scene/house_shadow.cpp.i
+src/grass.i: src/grass.cpp.i
 
-.PHONY : src/gl9_scene/house_shadow.i
+.PHONY : src/grass.i
 
 # target to preprocess a source file
-src/gl9_scene/house_shadow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.i
-.PHONY : src/gl9_scene/house_shadow.cpp.i
+src/grass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/grass.cpp.i
+.PHONY : src/grass.cpp.i
 
-src/gl9_scene/house_shadow.s: src/gl9_scene/house_shadow.cpp.s
+src/grass.s: src/grass.cpp.s
 
-.PHONY : src/gl9_scene/house_shadow.s
+.PHONY : src/grass.s
 
 # target to generate assembly for a file
-src/gl9_scene/house_shadow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/house_shadow.cpp.s
-.PHONY : src/gl9_scene/house_shadow.cpp.s
+src/grass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/grass.cpp.s
+.PHONY : src/grass.cpp.s
 
-src/gl9_scene/object.obj: src/gl9_scene/object.cpp.obj
+src/ground.obj: src/ground.cpp.obj
 
-.PHONY : src/gl9_scene/object.obj
+.PHONY : src/ground.obj
 
 # target to build an object file
-src/gl9_scene/object.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj
-.PHONY : src/gl9_scene/object.cpp.obj
+src/ground.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/ground.cpp.obj
+.PHONY : src/ground.cpp.obj
 
-src/gl9_scene/object.i: src/gl9_scene/object.cpp.i
+src/ground.i: src/ground.cpp.i
 
-.PHONY : src/gl9_scene/object.i
+.PHONY : src/ground.i
 
 # target to preprocess a source file
-src/gl9_scene/object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.i
-.PHONY : src/gl9_scene/object.cpp.i
+src/ground.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/ground.cpp.i
+.PHONY : src/ground.cpp.i
 
-src/gl9_scene/object.s: src/gl9_scene/object.cpp.s
+src/ground.s: src/ground.cpp.s
 
-.PHONY : src/gl9_scene/object.s
+.PHONY : src/ground.s
 
 # target to generate assembly for a file
-src/gl9_scene/object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.s
-.PHONY : src/gl9_scene/object.cpp.s
+src/ground.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/ground.cpp.s
+.PHONY : src/ground.cpp.s
 
-src/gl9_scene/player.obj: src/gl9_scene/player.cpp.obj
+src/house.obj: src/house.cpp.obj
 
-.PHONY : src/gl9_scene/player.obj
+.PHONY : src/house.obj
 
 # target to build an object file
-src/gl9_scene/player.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj
-.PHONY : src/gl9_scene/player.cpp.obj
+src/house.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/house.cpp.obj
+.PHONY : src/house.cpp.obj
 
-src/gl9_scene/player.i: src/gl9_scene/player.cpp.i
+src/house.i: src/house.cpp.i
 
-.PHONY : src/gl9_scene/player.i
+.PHONY : src/house.i
 
 # target to preprocess a source file
-src/gl9_scene/player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.i
-.PHONY : src/gl9_scene/player.cpp.i
+src/house.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/house.cpp.i
+.PHONY : src/house.cpp.i
 
-src/gl9_scene/player.s: src/gl9_scene/player.cpp.s
+src/house.s: src/house.cpp.s
 
-.PHONY : src/gl9_scene/player.s
+.PHONY : src/house.s
 
 # target to generate assembly for a file
-src/gl9_scene/player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.s
-.PHONY : src/gl9_scene/player.cpp.s
+src/house.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/house.cpp.s
+.PHONY : src/house.cpp.s
 
-src/gl9_scene/projectile.obj: src/gl9_scene/projectile.cpp.obj
+src/house_shadow.obj: src/house_shadow.cpp.obj
 
-.PHONY : src/gl9_scene/projectile.obj
+.PHONY : src/house_shadow.obj
 
 # target to build an object file
-src/gl9_scene/projectile.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.obj
-.PHONY : src/gl9_scene/projectile.cpp.obj
+src/house_shadow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/house_shadow.cpp.obj
+.PHONY : src/house_shadow.cpp.obj
 
-src/gl9_scene/projectile.i: src/gl9_scene/projectile.cpp.i
+src/house_shadow.i: src/house_shadow.cpp.i
 
-.PHONY : src/gl9_scene/projectile.i
+.PHONY : src/house_shadow.i
 
 # target to preprocess a source file
-src/gl9_scene/projectile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.i
-.PHONY : src/gl9_scene/projectile.cpp.i
+src/house_shadow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/house_shadow.cpp.i
+.PHONY : src/house_shadow.cpp.i
 
-src/gl9_scene/projectile.s: src/gl9_scene/projectile.cpp.s
+src/house_shadow.s: src/house_shadow.cpp.s
 
-.PHONY : src/gl9_scene/projectile.s
+.PHONY : src/house_shadow.s
 
 # target to generate assembly for a file
-src/gl9_scene/projectile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/projectile.cpp.s
-.PHONY : src/gl9_scene/projectile.cpp.s
+src/house_shadow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/house_shadow.cpp.s
+.PHONY : src/house_shadow.cpp.s
 
-src/gl9_scene/room_wall.obj: src/gl9_scene/room_wall.cpp.obj
+src/object.obj: src/object.cpp.obj
 
-.PHONY : src/gl9_scene/room_wall.obj
+.PHONY : src/object.obj
 
 # target to build an object file
-src/gl9_scene/room_wall.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.obj
-.PHONY : src/gl9_scene/room_wall.cpp.obj
+src/object.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/object.cpp.obj
+.PHONY : src/object.cpp.obj
 
-src/gl9_scene/room_wall.i: src/gl9_scene/room_wall.cpp.i
+src/object.i: src/object.cpp.i
 
-.PHONY : src/gl9_scene/room_wall.i
+.PHONY : src/object.i
 
 # target to preprocess a source file
-src/gl9_scene/room_wall.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.i
-.PHONY : src/gl9_scene/room_wall.cpp.i
+src/object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/object.cpp.i
+.PHONY : src/object.cpp.i
 
-src/gl9_scene/room_wall.s: src/gl9_scene/room_wall.cpp.s
+src/object.s: src/object.cpp.s
 
-.PHONY : src/gl9_scene/room_wall.s
+.PHONY : src/object.s
 
 # target to generate assembly for a file
-src/gl9_scene/room_wall.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/room_wall.cpp.s
-.PHONY : src/gl9_scene/room_wall.cpp.s
+src/object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/object.cpp.s
+.PHONY : src/object.cpp.s
 
-src/gl9_scene/scene.obj: src/gl9_scene/scene.cpp.obj
+src/player.obj: src/player.cpp.obj
 
-.PHONY : src/gl9_scene/scene.obj
+.PHONY : src/player.obj
 
 # target to build an object file
-src/gl9_scene/scene.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj
-.PHONY : src/gl9_scene/scene.cpp.obj
+src/player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/player.cpp.obj
+.PHONY : src/player.cpp.obj
 
-src/gl9_scene/scene.i: src/gl9_scene/scene.cpp.i
+src/player.i: src/player.cpp.i
 
-.PHONY : src/gl9_scene/scene.i
+.PHONY : src/player.i
 
 # target to preprocess a source file
-src/gl9_scene/scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.i
-.PHONY : src/gl9_scene/scene.cpp.i
+src/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/player.cpp.i
+.PHONY : src/player.cpp.i
 
-src/gl9_scene/scene.s: src/gl9_scene/scene.cpp.s
+src/player.s: src/player.cpp.s
 
-.PHONY : src/gl9_scene/scene.s
+.PHONY : src/player.s
 
 # target to generate assembly for a file
-src/gl9_scene/scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.s
-.PHONY : src/gl9_scene/scene.cpp.s
+src/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/player.cpp.s
+.PHONY : src/player.cpp.s
 
-src/gl9_scene/space.obj: src/gl9_scene/space.cpp.obj
+src/room_wall.obj: src/room_wall.cpp.obj
 
-.PHONY : src/gl9_scene/space.obj
+.PHONY : src/room_wall.obj
 
 # target to build an object file
-src/gl9_scene/space.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.obj
-.PHONY : src/gl9_scene/space.cpp.obj
+src/room_wall.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/room_wall.cpp.obj
+.PHONY : src/room_wall.cpp.obj
 
-src/gl9_scene/space.i: src/gl9_scene/space.cpp.i
+src/room_wall.i: src/room_wall.cpp.i
 
-.PHONY : src/gl9_scene/space.i
+.PHONY : src/room_wall.i
 
 # target to preprocess a source file
-src/gl9_scene/space.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.i
-.PHONY : src/gl9_scene/space.cpp.i
+src/room_wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/room_wall.cpp.i
+.PHONY : src/room_wall.cpp.i
 
-src/gl9_scene/space.s: src/gl9_scene/space.cpp.s
+src/room_wall.s: src/room_wall.cpp.s
 
-.PHONY : src/gl9_scene/space.s
+.PHONY : src/room_wall.s
 
 # target to generate assembly for a file
-src/gl9_scene/space.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/space.cpp.s
-.PHONY : src/gl9_scene/space.cpp.s
+src/room_wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/room_wall.cpp.s
+.PHONY : src/room_wall.cpp.s
 
-src/gl9_scene/tree1_1.obj: src/gl9_scene/tree1_1.cpp.obj
+src/scene.obj: src/scene.cpp.obj
 
-.PHONY : src/gl9_scene/tree1_1.obj
+.PHONY : src/scene.obj
 
 # target to build an object file
-src/gl9_scene/tree1_1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.obj
-.PHONY : src/gl9_scene/tree1_1.cpp.obj
+src/scene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/scene.cpp.obj
+.PHONY : src/scene.cpp.obj
 
-src/gl9_scene/tree1_1.i: src/gl9_scene/tree1_1.cpp.i
+src/scene.i: src/scene.cpp.i
 
-.PHONY : src/gl9_scene/tree1_1.i
+.PHONY : src/scene.i
 
 # target to preprocess a source file
-src/gl9_scene/tree1_1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.i
-.PHONY : src/gl9_scene/tree1_1.cpp.i
+src/scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/scene.cpp.i
+.PHONY : src/scene.cpp.i
 
-src/gl9_scene/tree1_1.s: src/gl9_scene/tree1_1.cpp.s
+src/scene.s: src/scene.cpp.s
 
-.PHONY : src/gl9_scene/tree1_1.s
+.PHONY : src/scene.s
 
 # target to generate assembly for a file
-src/gl9_scene/tree1_1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_1.cpp.s
-.PHONY : src/gl9_scene/tree1_1.cpp.s
+src/scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/scene.cpp.s
+.PHONY : src/scene.cpp.s
 
-src/gl9_scene/tree1_2.obj: src/gl9_scene/tree1_2.cpp.obj
+src/tree.obj: src/tree.cpp.obj
 
-.PHONY : src/gl9_scene/tree1_2.obj
+.PHONY : src/tree.obj
 
 # target to build an object file
-src/gl9_scene/tree1_2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.obj
-.PHONY : src/gl9_scene/tree1_2.cpp.obj
+src/tree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/tree.cpp.obj
+.PHONY : src/tree.cpp.obj
 
-src/gl9_scene/tree1_2.i: src/gl9_scene/tree1_2.cpp.i
+src/tree.i: src/tree.cpp.i
 
-.PHONY : src/gl9_scene/tree1_2.i
+.PHONY : src/tree.i
 
 # target to preprocess a source file
-src/gl9_scene/tree1_2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.i
-.PHONY : src/gl9_scene/tree1_2.cpp.i
+src/tree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/tree.cpp.i
+.PHONY : src/tree.cpp.i
 
-src/gl9_scene/tree1_2.s: src/gl9_scene/tree1_2.cpp.s
+src/tree.s: src/tree.cpp.s
 
-.PHONY : src/gl9_scene/tree1_2.s
+.PHONY : src/tree.s
 
 # target to generate assembly for a file
-src/gl9_scene/tree1_2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree1_2.cpp.s
-.PHONY : src/gl9_scene/tree1_2.cpp.s
+src/tree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/tree.cpp.s
+.PHONY : src/tree.cpp.s
 
-src/gl9_scene/tree_shadow.obj: src/gl9_scene/tree_shadow.cpp.obj
+src/tree_shadow.obj: src/tree_shadow.cpp.obj
 
-.PHONY : src/gl9_scene/tree_shadow.obj
+.PHONY : src/tree_shadow.obj
 
 # target to build an object file
-src/gl9_scene/tree_shadow.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.obj
-.PHONY : src/gl9_scene/tree_shadow.cpp.obj
+src/tree_shadow.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/tree_shadow.cpp.obj
+.PHONY : src/tree_shadow.cpp.obj
 
-src/gl9_scene/tree_shadow.i: src/gl9_scene/tree_shadow.cpp.i
+src/tree_shadow.i: src/tree_shadow.cpp.i
 
-.PHONY : src/gl9_scene/tree_shadow.i
+.PHONY : src/tree_shadow.i
 
 # target to preprocess a source file
-src/gl9_scene/tree_shadow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.i
-.PHONY : src/gl9_scene/tree_shadow.cpp.i
+src/tree_shadow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/tree_shadow.cpp.i
+.PHONY : src/tree_shadow.cpp.i
 
-src/gl9_scene/tree_shadow.s: src/gl9_scene/tree_shadow.cpp.s
+src/tree_shadow.s: src/tree_shadow.cpp.s
 
-.PHONY : src/gl9_scene/tree_shadow.s
+.PHONY : src/tree_shadow.s
 
 # target to generate assembly for a file
-src/gl9_scene/tree_shadow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/tree_shadow.cpp.s
-.PHONY : src/gl9_scene/tree_shadow.cpp.s
+src/tree_shadow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ufo_game.dir\build.make CMakeFiles/ufo_game.dir/src/tree_shadow.cpp.s
+.PHONY : src/tree_shadow.cpp.s
 
 # Help Target
 help:
@@ -1211,10 +1184,10 @@ help:
 	@echo ... install/strip
 	@echo ... list_install_components
 	@echo ... rebuild_cache
-	@echo ... gl9_scene
 	@echo ... ppgso
 	@echo ... shaders
 	@echo ... test
+	@echo ... ufo_game
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -1266,63 +1239,60 @@ help:
 	@echo ... shaders/texture_vert_glsl.obj
 	@echo ... shaders/texture_vert_glsl.i
 	@echo ... shaders/texture_vert_glsl.s
-	@echo ... src/gl9_scene/asteroid.obj
-	@echo ... src/gl9_scene/asteroid.i
-	@echo ... src/gl9_scene/asteroid.s
-	@echo ... src/gl9_scene/cage.obj
-	@echo ... src/gl9_scene/cage.i
-	@echo ... src/gl9_scene/cage.s
-	@echo ... src/gl9_scene/camera.obj
-	@echo ... src/gl9_scene/camera.i
-	@echo ... src/gl9_scene/camera.s
-	@echo ... src/gl9_scene/cow_shadow.obj
-	@echo ... src/gl9_scene/cow_shadow.i
-	@echo ... src/gl9_scene/cow_shadow.s
-	@echo ... src/gl9_scene/explosion.obj
-	@echo ... src/gl9_scene/explosion.i
-	@echo ... src/gl9_scene/explosion.s
-	@echo ... src/gl9_scene/generator.obj
-	@echo ... src/gl9_scene/generator.i
-	@echo ... src/gl9_scene/generator.s
-	@echo ... src/gl9_scene/gl9_scene.obj
-	@echo ... src/gl9_scene/gl9_scene.i
-	@echo ... src/gl9_scene/gl9_scene.s
-	@echo ... src/gl9_scene/grass.obj
-	@echo ... src/gl9_scene/grass.i
-	@echo ... src/gl9_scene/grass.s
-	@echo ... src/gl9_scene/house.obj
-	@echo ... src/gl9_scene/house.i
-	@echo ... src/gl9_scene/house.s
-	@echo ... src/gl9_scene/house_shadow.obj
-	@echo ... src/gl9_scene/house_shadow.i
-	@echo ... src/gl9_scene/house_shadow.s
-	@echo ... src/gl9_scene/object.obj
-	@echo ... src/gl9_scene/object.i
-	@echo ... src/gl9_scene/object.s
-	@echo ... src/gl9_scene/player.obj
-	@echo ... src/gl9_scene/player.i
-	@echo ... src/gl9_scene/player.s
-	@echo ... src/gl9_scene/projectile.obj
-	@echo ... src/gl9_scene/projectile.i
-	@echo ... src/gl9_scene/projectile.s
-	@echo ... src/gl9_scene/room_wall.obj
-	@echo ... src/gl9_scene/room_wall.i
-	@echo ... src/gl9_scene/room_wall.s
-	@echo ... src/gl9_scene/scene.obj
-	@echo ... src/gl9_scene/scene.i
-	@echo ... src/gl9_scene/scene.s
-	@echo ... src/gl9_scene/space.obj
-	@echo ... src/gl9_scene/space.i
-	@echo ... src/gl9_scene/space.s
-	@echo ... src/gl9_scene/tree1_1.obj
-	@echo ... src/gl9_scene/tree1_1.i
-	@echo ... src/gl9_scene/tree1_1.s
-	@echo ... src/gl9_scene/tree1_2.obj
-	@echo ... src/gl9_scene/tree1_2.i
-	@echo ... src/gl9_scene/tree1_2.s
-	@echo ... src/gl9_scene/tree_shadow.obj
-	@echo ... src/gl9_scene/tree_shadow.i
-	@echo ... src/gl9_scene/tree_shadow.s
+	@echo ... src/beam.obj
+	@echo ... src/beam.i
+	@echo ... src/beam.s
+	@echo ... src/cage.obj
+	@echo ... src/cage.i
+	@echo ... src/cage.s
+	@echo ... src/camera.obj
+	@echo ... src/camera.i
+	@echo ... src/camera.s
+	@echo ... src/cow.obj
+	@echo ... src/cow.i
+	@echo ... src/cow.s
+	@echo ... src/cow_shadow.obj
+	@echo ... src/cow_shadow.i
+	@echo ... src/cow_shadow.s
+	@echo ... src/explosion.obj
+	@echo ... src/explosion.i
+	@echo ... src/explosion.s
+	@echo ... src/game_scene.obj
+	@echo ... src/game_scene.i
+	@echo ... src/game_scene.s
+	@echo ... src/generator.obj
+	@echo ... src/generator.i
+	@echo ... src/generator.s
+	@echo ... src/grass.obj
+	@echo ... src/grass.i
+	@echo ... src/grass.s
+	@echo ... src/ground.obj
+	@echo ... src/ground.i
+	@echo ... src/ground.s
+	@echo ... src/house.obj
+	@echo ... src/house.i
+	@echo ... src/house.s
+	@echo ... src/house_shadow.obj
+	@echo ... src/house_shadow.i
+	@echo ... src/house_shadow.s
+	@echo ... src/object.obj
+	@echo ... src/object.i
+	@echo ... src/object.s
+	@echo ... src/player.obj
+	@echo ... src/player.i
+	@echo ... src/player.s
+	@echo ... src/room_wall.obj
+	@echo ... src/room_wall.i
+	@echo ... src/room_wall.s
+	@echo ... src/scene.obj
+	@echo ... src/scene.i
+	@echo ... src/scene.s
+	@echo ... src/tree.obj
+	@echo ... src/tree.i
+	@echo ... src/tree.s
+	@echo ... src/tree_shadow.obj
+	@echo ... src/tree_shadow.i
+	@echo ... src/tree_shadow.s
 .PHONY : help
 
 

@@ -86,97 +86,92 @@
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\gl9_scene.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\gl9_scene.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/gl9_scene.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\game_scene.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\game_scene.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/game_scene.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\object.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\object.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\object.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\object.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\scene.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\scene.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\scene.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\scene.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\camera.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\camera.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\camera.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\camera.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/camera.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\asteroid.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\asteroid.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\cow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\cow.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\cow_shadow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\cow_shadow.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cow_shadow.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\cow_shadow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\cow_shadow.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow_shadow.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\generator.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\generator.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\generator.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\generator.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/generator.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\player.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\player.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\player.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\player.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\projectile.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\projectile.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\beam.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\beam.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/beam.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\explosion.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\explosion.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/explosion.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\explosion.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\explosion.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/explosion.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\space.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\space.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\ground.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\ground.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/ground.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\house.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\house.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\house.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\house.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\house_shadow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\house_shadow.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\house_shadow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\house_shadow.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house_shadow.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\tree1_1.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\tree1_1.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_1.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\tree.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\tree.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\tree_shadow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\tree_shadow.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\tree_shadow.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\tree_shadow.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree_shadow.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\tree1_2.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\tree1_2.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree1_2.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\grass.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\grass.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/grass.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\grass.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\grass.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/grass.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\room_wall.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\room_wall.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/room_wall.cpp"
 },
 {
   "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\room_wall.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\room_wall.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/room_wall.cpp"
-},
-{
-  "directory": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug",
-  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\cage.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\gl9_scene\\cage.cpp\"",
-  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cage.cpp"
+  "command": "C:\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe  -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ufo_game.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter   -std=gnu++14 -o CMakeFiles\\ufo_game.dir\\src\\cage.cpp.obj -c \"D:\\Dokumenty\\FIIT\\5. semester\\PPGSO\\projekt\\src\\cage.cpp\"",
+  "file": "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cage.cpp"
 }
 ]

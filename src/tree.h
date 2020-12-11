@@ -11,7 +11,7 @@
  * This sphere object represents an instance of mesh geometry
  * It initializes and loads all resources only once
  */
-class Tree1_2 final : public Object {
+class Tree final : public Object {
 private:
     // Static resources (Shared between instances)
     static std::unique_ptr<ppgso::Mesh> mesh;
@@ -20,10 +20,9 @@ private:
 
     // Age of the object in seconds
     float age{0.0f};
-    float Ka = 0.024155;
-    float Kd = 0.737255;
-    float Ks = 0.034077;
-
+    glm::vec3 Ka = {0.036861, 0.036861, 0.036861};
+    glm::vec3 Kd = {3.640506, 3.640506, 3.640506};
+    glm::vec3 Ks = {0.210769, 0.210769, 0.210769};
     /*!
      * Split the asteroid into multiple pieces and spawn an explosion object.
      *
@@ -37,7 +36,7 @@ public:
     /*!
      * Create new asteroid
      */
-    Tree1_2();
+    Tree();
 
     /*!
      * Update asteroid

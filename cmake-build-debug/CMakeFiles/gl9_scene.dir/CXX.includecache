@@ -790,6 +790,34 @@ compatibility.inl
 limits
 -
 
+../dependencies/include/glm/gtx/euler_angles.hpp
+../glm.hpp
+../dependencies/include/glm/glm.hpp
+euler_angles.inl
+../dependencies/include/glm/gtx/euler_angles.inl
+
+../dependencies/include/glm/gtx/euler_angles.inl
+compatibility.hpp
+../dependencies/include/glm/gtx/compatibility.hpp
+
+../dependencies/include/glm/gtx/matrix_interpolation.hpp
+../glm.hpp
+../dependencies/include/glm/glm.hpp
+matrix_interpolation.inl
+../dependencies/include/glm/gtx/matrix_interpolation.inl
+
+../dependencies/include/glm/gtx/matrix_interpolation.inl
+
+../dependencies/include/glm/gtx/transform.hpp
+../glm.hpp
+../dependencies/include/glm/glm.hpp
+../gtc/matrix_transform.hpp
+../dependencies/include/glm/gtc/matrix_transform.hpp
+transform.inl
+../dependencies/include/glm/gtx/transform.inl
+
+../dependencies/include/glm/gtx/transform.inl
+
 ../dependencies/include/glm/integer.hpp
 detail/func_integer.hpp
 ../dependencies/include/glm/detail/func_integer.hpp
@@ -1004,117 +1032,421 @@ GL/glew.h
 GLFW/glfw3.h
 -
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.h
-memory
--
-ppgso/ppgso.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/beam.cpp
+glm/gtc/random.hpp
 -
 scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.h
-memory
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+beam.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/beam.h
+shaders/color_vert_glsl.h
 -
+shaders/color_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/beam.h
+ppgso/ppgso.h
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cage.cpp
+cage.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cage.h
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cage.h
+ppgso/ppgso.h
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/camera.cpp
 glm/glm.hpp
 -
-ppgso/ppgso.h
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cow_shadow.h
-memory
--
-ppgso/ppgso.h
--
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-asteroid.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/asteroid.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.h
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
-memory
--
-ppgso/ppgso.h
--
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-memory
--
-list
--
-map
--
-glm/glm.hpp
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-ppgso/ppgso.h
--
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.h
-ppgso/ppgso.h
--
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.cpp
-scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-player.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/player.h
-space.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.h
-generator.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/generator.h
-house_shadow.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/house_shadow.h
-tree_shadow.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.h
-cow_shadow.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/cow_shadow.h
-projectile.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/projectile.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
-memory
--
-map
--
-list
--
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 camera.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/camera.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/camera.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/space.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/camera.h
+memory
+-
+glm/glm.hpp
+-
 ppgso/ppgso.h
 -
-object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/tree_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow.cpp
+glm/gtc/random.hpp
+-
+cow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow.h
+beam.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/beam.h
+explosion.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/explosion.h
+grass.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/grass.h
+tree.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree.h
+house.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house.h
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow.h
 memory
 -
 ppgso/ppgso.h
 -
 scene.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
 object.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/gl9_scene/object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow_shadow.cpp
+glm/gtc/random.hpp
+-
+cow_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow_shadow.h
+shaders/color_vert_glsl.h
+-
+shaders/color_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow_shadow.h
+memory
+-
+ppgso/ppgso.h
+-
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+cow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/explosion.cpp
+glm/gtc/random.hpp
+-
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+explosion.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/explosion.h
+shaders/texture_vert_glsl.h
+-
+shaders/texture_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/explosion.h
+ppgso/ppgso.h
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/game_scene.cpp
+iostream
+-
+map
+-
+list
+-
+string
+-
+glm/gtx/matrix_interpolation.hpp
+-
+ppgso/ppgso.h
+-
+camera.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/camera.h
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+generator.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/generator.h
+player.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.h
+ground.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/ground.h
+cow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow.h
+room_wall.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/room_wall.h
+cage.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cage.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/generator.cpp
+glm/gtc/random.hpp
+-
+ppgso/ppgso.h
+-
+generator.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/generator.h
+cow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow.h
+house.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house.h
+tree.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree.h
+grass.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/grass.h
+player.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.h
+house_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house_shadow.h
+tree_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree_shadow.h
+cow_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow_shadow.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/generator.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/grass.cpp
+glm/gtc/random.hpp
+-
+grass.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/grass.h
+player.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.h
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/grass.h
+memory
+-
+ppgso/ppgso.h
+-
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/ground.cpp
+ground.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/ground.h
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/ground.h
+ppgso/ppgso.h
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house.cpp
+glm/gtc/random.hpp
+-
+house.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house.h
+explosion.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/explosion.h
+player.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.h
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house.h
+memory
+-
+ppgso/ppgso.h
+-
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+house_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house_shadow.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house_shadow.cpp
+glm/gtc/random.hpp
+-
+house_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house_shadow.h
+shaders/color_vert_glsl.h
+-
+shaders/color_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house_shadow.h
+memory
+-
+ppgso/ppgso.h
+-
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.cpp
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+glm/gtx/euler_angles.hpp
+-
+glm/gtx/transform.hpp
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+memory
+-
+list
+-
+map
+-
+glm/glm.hpp
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.cpp
+player.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.h
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+cow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow.h
+beam.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/beam.h
+explosion.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/explosion.h
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.h
+ppgso/ppgso.h
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/room_wall.cpp
+room_wall.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/room_wall.h
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/room_wall.h
+ppgso/ppgso.h
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.cpp
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+player.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.h
+ground.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/ground.h
+generator.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/generator.h
+house_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/house_shadow.h
+tree_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree_shadow.h
+cow_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/cow_shadow.h
+beam.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/beam.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+memory
+-
+map
+-
+list
+-
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+camera.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/camera.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree.cpp
+glm/gtc/random.hpp
+-
+tree.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree.h
+player.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/player.h
+shaders/diffuse_vert_glsl.h
+-
+shaders/diffuse_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree.h
+memory
+-
+ppgso/ppgso.h
+-
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree_shadow.cpp
+glm/gtc/random.hpp
+-
+tree_shadow.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree_shadow.h
+shaders/color_vert_glsl.h
+-
+shaders/color_frag_glsl.h
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/tree_shadow.h
+memory
+-
+ppgso/ppgso.h
+-
+scene.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/scene.h
+object.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/src/object.h
+
+shaders/color_frag_glsl.h
+string
+-
+
+shaders/color_vert_glsl.h
+string
+-
+
+shaders/diffuse_frag_glsl.h
+string
+-
+
+shaders/diffuse_vert_glsl.h
+string
+-
+
+shaders/texture_frag_glsl.h
+string
+-
+
+shaders/texture_vert_glsl.h
+string
+-
 
