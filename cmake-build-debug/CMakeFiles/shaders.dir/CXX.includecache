@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_frag_glsl.cpp
-diffuse_frag_glsl.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_frag_glsl.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.cpp
+transparent_frag_glsl.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_frag_glsl.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.h
+string
+-
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.cpp
+transparent_vert_glsl.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.h
+
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.h
 string
 -
 

@@ -4,8 +4,8 @@
 #include "beam.h"
 #include "explosion.h"
 
-#include <shaders/diffuse_vert_glsl.h>
-#include <shaders/diffuse_frag_glsl.h>
+#include <shaders/phong_vert_glsl.h>
+#include <shaders/phong_frag_glsl.h>
 
 // shared resources
 std::unique_ptr<ppgso::Mesh> Player::mesh;
@@ -17,9 +17,9 @@ Player::Player() {
   scale *= 0.05f;
 
   // Initialize static resources if needed
-  if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
-  if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("corsair.bmp"));
-  if (!mesh) mesh = std::make_unique<ppgso::Mesh>("corsair.obj");
+  if (!shader) shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
+  if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("ufo.bmp"));
+  if (!mesh) mesh = std::make_unique<ppgso::Mesh>("ufo.obj");
 }
 
 

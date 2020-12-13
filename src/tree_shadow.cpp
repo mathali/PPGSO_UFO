@@ -1,8 +1,8 @@
 #include <glm/gtc/random.hpp>
 #include "tree_shadow.h"
 
-#include <shaders/color_vert_glsl.h>
-#include <shaders/color_frag_glsl.h>
+#include <shaders/transparent_vert_glsl.h>
+#include <shaders/transparent_frag_glsl.h>
 
 
 // Static resources
@@ -15,8 +15,8 @@ Tree_shadow::Tree_shadow() {
     scale *=  2.0f;
 
     // Initialize static resources if needed
-    if (!shader) shader = std::make_unique<ppgso::Shader>(color_vert_glsl, color_frag_glsl);
-    if (!mesh) mesh = std::make_unique<ppgso::Mesh>("nature/tree_test.obj");
+    if (!shader) shader = std::make_unique<ppgso::Shader>(transparent_vert_glsl, transparent_frag_glsl);
+    if (!mesh) mesh = std::make_unique<ppgso::Mesh>("nature/tree.obj");
 }
 
 bool Tree_shadow::update(Scene &scene, float dt) {

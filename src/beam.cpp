@@ -2,8 +2,8 @@
 #include "scene.h"
 #include "beam.h"
 
-#include <shaders/color_vert_glsl.h>
-#include <shaders/color_frag_glsl.h>
+#include <shaders/transparent_vert_glsl.h>
+#include <shaders/transparent_frag_glsl.h>
 
 
 // shared resources
@@ -17,9 +17,8 @@ Beam::Beam() {
   scale.y *= 2.0f;
 
   // Initialize static resources if needed
-  if (!shader) shader = std::make_unique<ppgso::Shader>(color_vert_glsl, color_frag_glsl);
-  if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("missile.bmp"));
-  if (!mesh) mesh = std::make_unique<ppgso::Mesh>("missile.obj");
+  if (!shader) shader = std::make_unique<ppgso::Shader>(transparent_vert_glsl, transparent_frag_glsl);
+  if (!mesh) mesh = std::make_unique<ppgso::Mesh>("beam.obj");
 }
 
 bool Beam::update(Scene &scene, float dt) {

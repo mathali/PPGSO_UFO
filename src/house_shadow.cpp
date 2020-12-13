@@ -1,8 +1,8 @@
 #include <glm/gtc/random.hpp>
 #include "house_shadow.h"
 
-#include <shaders/color_vert_glsl.h>
-#include <shaders/color_frag_glsl.h>
+#include <shaders/transparent_vert_glsl.h>
+#include <shaders/transparent_frag_glsl.h>
 
 
 // Static resources
@@ -16,7 +16,7 @@ House_shadow::House_shadow() {
     rotation = {0, 0, glm::linearRand(-3.0f, 3.0f)};
 
     // Initialize static resources if needed
-    if (!shader) shader = std::make_unique<ppgso::Shader>(color_vert_glsl, color_frag_glsl);
+    if (!shader) shader = std::make_unique<ppgso::Shader>(transparent_vert_glsl, transparent_frag_glsl);
     if (!mesh) mesh = std::make_unique<ppgso::Mesh>("house.obj");
 }
 

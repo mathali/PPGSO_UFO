@@ -76,150 +76,108 @@ include CMakeFiles/shaders.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/shaders.dir/flags.make
 
-shaders/color_vert_glsl.cpp: ../shader/color_vert.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/color_vert.glsl"
-	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_vert_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_vert_glsl.h" -DSYMBOL=color_vert_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/color_vert.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
+shaders/transparent_vert_glsl.cpp: ../shader/transparent_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/transparent_vert.glsl"
+	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.h" -DSYMBOL=transparent_vert_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/transparent_vert.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
 
-shaders/color_vert_glsl.h: shaders/color_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate shaders\color_vert_glsl.h
+shaders/transparent_vert_glsl.h: shaders/transparent_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\transparent_vert_glsl.h
 
-shaders/color_frag_glsl.cpp: ../shader/color_frag.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/color_frag.glsl"
-	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_frag_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_frag_glsl.h" -DSYMBOL=color_frag_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/color_frag.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
+shaders/transparent_frag_glsl.cpp: ../shader/transparent_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/transparent_frag.glsl"
+	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.h" -DSYMBOL=transparent_frag_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/transparent_frag.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
 
-shaders/color_frag_glsl.h: shaders/color_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate shaders\color_frag_glsl.h
+shaders/transparent_frag_glsl.h: shaders/transparent_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\transparent_frag_glsl.h
 
-shaders/convolution_vert_glsl.cpp: ../shader/convolution_vert.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/convolution_vert.glsl"
-	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_vert_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_vert_glsl.h" -DSYMBOL=convolution_vert_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/convolution_vert.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
+shaders/phong_vert_glsl.cpp: ../shader/phong_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/phong_vert.glsl"
+	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_vert_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_vert_glsl.h" -DSYMBOL=phong_vert_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/phong_vert.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
 
-shaders/convolution_vert_glsl.h: shaders/convolution_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate shaders\convolution_vert_glsl.h
+shaders/phong_vert_glsl.h: shaders/phong_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\phong_vert_glsl.h
 
-shaders/convolution_frag_glsl.cpp: ../shader/convolution_frag.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/convolution_frag.glsl"
-	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_frag_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_frag_glsl.h" -DSYMBOL=convolution_frag_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/convolution_frag.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
+shaders/phong_frag_glsl.cpp: ../shader/phong_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/phong_frag.glsl"
+	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_frag_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_frag_glsl.h" -DSYMBOL=phong_frag_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/phong_frag.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
 
-shaders/convolution_frag_glsl.h: shaders/convolution_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate shaders\convolution_frag_glsl.h
-
-shaders/diffuse_vert_glsl.cpp: ../shader/diffuse_vert.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/diffuse_vert.glsl"
-	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_vert_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_vert_glsl.h" -DSYMBOL=diffuse_vert_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/diffuse_vert.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
-
-shaders/diffuse_vert_glsl.h: shaders/diffuse_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate shaders\diffuse_vert_glsl.h
-
-shaders/diffuse_frag_glsl.cpp: ../shader/diffuse_frag.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/diffuse_frag.glsl"
-	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_frag_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_frag_glsl.h" -DSYMBOL=diffuse_frag_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/diffuse_frag.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
-
-shaders/diffuse_frag_glsl.h: shaders/diffuse_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate shaders\diffuse_frag_glsl.h
+shaders/phong_frag_glsl.h: shaders/phong_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\phong_frag_glsl.h
 
 shaders/texture_vert_glsl.cpp: ../shader/texture_vert.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/texture_vert.glsl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/texture_vert.glsl"
 	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_vert_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_vert_glsl.h" -DSYMBOL=texture_vert_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/texture_vert.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
 
 shaders/texture_vert_glsl.h: shaders/texture_vert_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders\texture_vert_glsl.h
 
 shaders/texture_frag_glsl.cpp: ../shader/texture_frag.glsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/texture_frag.glsl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Generating resource from D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/texture_frag.glsl"
 	"D:\Programy\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" "-DOUTPUT_C=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_frag_glsl.cpp" "-DOUTPUT_H=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_frag_glsl.h" -DSYMBOL=texture_frag_glsl "-DINPUT_FILE=D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/shader/texture_frag.glsl" -P "D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake/bin2c.cmake"
 
 shaders/texture_frag_glsl.h: shaders/texture_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders\texture_frag_glsl.h
 
-CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
-CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
-CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: shaders/color_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\color_vert_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\color_vert_glsl.cpp"
+CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.obj: shaders/transparent_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\transparent_vert_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\transparent_vert_glsl.cpp"
 
-CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\color_vert_glsl.cpp" > CMakeFiles\shaders.dir\shaders\color_vert_glsl.cpp.i
+CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\transparent_vert_glsl.cpp" > CMakeFiles\shaders.dir\shaders\transparent_vert_glsl.cpp.i
 
-CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\color_vert_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\color_vert_glsl.cpp.s
+CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\transparent_vert_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\transparent_vert_glsl.cpp.s
 
-CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
-CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
-CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: shaders/color_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\color_frag_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\color_frag_glsl.cpp"
+CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.obj: shaders/transparent_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\transparent_frag_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\transparent_frag_glsl.cpp"
 
-CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\color_frag_glsl.cpp" > CMakeFiles\shaders.dir\shaders\color_frag_glsl.cpp.i
+CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\transparent_frag_glsl.cpp" > CMakeFiles\shaders.dir\shaders\transparent_frag_glsl.cpp.i
 
-CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\color_frag_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\color_frag_glsl.cpp.s
+CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\transparent_frag_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\transparent_frag_glsl.cpp.s
 
-CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
-CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
-CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: shaders/convolution_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\convolution_vert_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\convolution_vert_glsl.cpp"
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.obj: shaders/phong_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\phong_vert_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\phong_vert_glsl.cpp"
 
-CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\convolution_vert_glsl.cpp" > CMakeFiles\shaders.dir\shaders\convolution_vert_glsl.cpp.i
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\phong_vert_glsl.cpp" > CMakeFiles\shaders.dir\shaders\phong_vert_glsl.cpp.i
 
-CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\convolution_vert_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\convolution_vert_glsl.cpp.s
+CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\phong_vert_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\phong_vert_glsl.cpp.s
 
-CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
-CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
-CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: shaders/convolution_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\convolution_frag_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\convolution_frag_glsl.cpp"
+CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.obj: shaders/phong_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.obj"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\phong_frag_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\phong_frag_glsl.cpp"
 
-CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\convolution_frag_glsl.cpp" > CMakeFiles\shaders.dir\shaders\convolution_frag_glsl.cpp.i
+CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.i"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\phong_frag_glsl.cpp" > CMakeFiles\shaders.dir\shaders\phong_frag_glsl.cpp.i
 
-CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\convolution_frag_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\convolution_frag_glsl.cpp.s
-
-CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
-CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
-CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: shaders/diffuse_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\diffuse_vert_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\diffuse_vert_glsl.cpp"
-
-CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\diffuse_vert_glsl.cpp" > CMakeFiles\shaders.dir\shaders\diffuse_vert_glsl.cpp.i
-
-CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\diffuse_vert_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\diffuse_vert_glsl.cpp.s
-
-CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
-CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
-CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: shaders/diffuse_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\diffuse_frag_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\diffuse_frag_glsl.cpp"
-
-CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\diffuse_frag_glsl.cpp" > CMakeFiles\shaders.dir\shaders\diffuse_frag_glsl.cpp.i
-
-CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s"
-	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\diffuse_frag_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\diffuse_frag_glsl.cpp.s
+CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.s"
+	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\phong_frag_glsl.cpp" -o CMakeFiles\shaders.dir\shaders\phong_frag_glsl.cpp.s
 
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: shaders/texture_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj"
 	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\texture_vert_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\texture_vert_glsl.cpp"
 
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.i: cmake_force
@@ -233,7 +191,7 @@ CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: shaders/texture_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
 	C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\texture_frag_glsl.cpp.obj -c "D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\shaders\texture_frag_glsl.cpp"
 
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.i: cmake_force
@@ -246,29 +204,25 @@ CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s: cmake_force
 
 # Object files for target shaders
 shaders_OBJECTS = \
-"CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj" \
-"CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj" \
-"CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj" \
-"CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj" \
-"CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj" \
-"CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.obj" \
 "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj" \
 "CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
 
 # External object files for target shaders
 shaders_EXTERNAL_OBJECTS =
 
-libshaders.a: CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj
-libshaders.a: CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj
-libshaders.a: CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj
-libshaders.a: CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj
-libshaders.a: CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj
-libshaders.a: CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/build.make
 libshaders.a: CMakeFiles/shaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libshaders.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Dokumenty\FIIT\5. semester\PPGSO\projekt\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libshaders.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\shaders.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\shaders.dir\link.txt --verbose=$(VERBOSE)
 
@@ -281,18 +235,14 @@ CMakeFiles/shaders.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\shaders.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/shaders.dir/clean
 
-CMakeFiles/shaders.dir/depend: shaders/color_vert_glsl.cpp
-CMakeFiles/shaders.dir/depend: shaders/color_vert_glsl.h
-CMakeFiles/shaders.dir/depend: shaders/color_frag_glsl.cpp
-CMakeFiles/shaders.dir/depend: shaders/color_frag_glsl.h
-CMakeFiles/shaders.dir/depend: shaders/convolution_vert_glsl.cpp
-CMakeFiles/shaders.dir/depend: shaders/convolution_vert_glsl.h
-CMakeFiles/shaders.dir/depend: shaders/convolution_frag_glsl.cpp
-CMakeFiles/shaders.dir/depend: shaders/convolution_frag_glsl.h
-CMakeFiles/shaders.dir/depend: shaders/diffuse_vert_glsl.cpp
-CMakeFiles/shaders.dir/depend: shaders/diffuse_vert_glsl.h
-CMakeFiles/shaders.dir/depend: shaders/diffuse_frag_glsl.cpp
-CMakeFiles/shaders.dir/depend: shaders/diffuse_frag_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/transparent_vert_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/transparent_vert_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/transparent_frag_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/transparent_frag_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/phong_vert_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/phong_vert_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/phong_frag_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/phong_frag_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/texture_vert_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/texture_vert_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/texture_frag_glsl.cpp

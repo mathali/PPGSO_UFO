@@ -470,167 +470,59 @@ ppgso/window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ppgso.dir\build.make CMakeFiles/ppgso.dir/ppgso/window.cpp.s
 .PHONY : ppgso/window.cpp.s
 
-shaders/color_frag_glsl.obj: shaders/color_frag_glsl.cpp.obj
+shaders/phong_frag_glsl.obj: shaders/phong_frag_glsl.cpp.obj
 
-.PHONY : shaders/color_frag_glsl.obj
-
-# target to build an object file
-shaders/color_frag_glsl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj
-.PHONY : shaders/color_frag_glsl.cpp.obj
-
-shaders/color_frag_glsl.i: shaders/color_frag_glsl.cpp.i
-
-.PHONY : shaders/color_frag_glsl.i
-
-# target to preprocess a source file
-shaders/color_frag_glsl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i
-.PHONY : shaders/color_frag_glsl.cpp.i
-
-shaders/color_frag_glsl.s: shaders/color_frag_glsl.cpp.s
-
-.PHONY : shaders/color_frag_glsl.s
-
-# target to generate assembly for a file
-shaders/color_frag_glsl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s
-.PHONY : shaders/color_frag_glsl.cpp.s
-
-shaders/color_vert_glsl.obj: shaders/color_vert_glsl.cpp.obj
-
-.PHONY : shaders/color_vert_glsl.obj
+.PHONY : shaders/phong_frag_glsl.obj
 
 # target to build an object file
-shaders/color_vert_glsl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj
-.PHONY : shaders/color_vert_glsl.cpp.obj
+shaders/phong_frag_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.obj
+.PHONY : shaders/phong_frag_glsl.cpp.obj
 
-shaders/color_vert_glsl.i: shaders/color_vert_glsl.cpp.i
+shaders/phong_frag_glsl.i: shaders/phong_frag_glsl.cpp.i
 
-.PHONY : shaders/color_vert_glsl.i
+.PHONY : shaders/phong_frag_glsl.i
 
 # target to preprocess a source file
-shaders/color_vert_glsl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i
-.PHONY : shaders/color_vert_glsl.cpp.i
+shaders/phong_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.i
+.PHONY : shaders/phong_frag_glsl.cpp.i
 
-shaders/color_vert_glsl.s: shaders/color_vert_glsl.cpp.s
+shaders/phong_frag_glsl.s: shaders/phong_frag_glsl.cpp.s
 
-.PHONY : shaders/color_vert_glsl.s
+.PHONY : shaders/phong_frag_glsl.s
 
 # target to generate assembly for a file
-shaders/color_vert_glsl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s
-.PHONY : shaders/color_vert_glsl.cpp.s
+shaders/phong_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/phong_frag_glsl.cpp.s
+.PHONY : shaders/phong_frag_glsl.cpp.s
 
-shaders/convolution_frag_glsl.obj: shaders/convolution_frag_glsl.cpp.obj
+shaders/phong_vert_glsl.obj: shaders/phong_vert_glsl.cpp.obj
 
-.PHONY : shaders/convolution_frag_glsl.obj
+.PHONY : shaders/phong_vert_glsl.obj
 
 # target to build an object file
-shaders/convolution_frag_glsl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj
-.PHONY : shaders/convolution_frag_glsl.cpp.obj
+shaders/phong_vert_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.obj
+.PHONY : shaders/phong_vert_glsl.cpp.obj
 
-shaders/convolution_frag_glsl.i: shaders/convolution_frag_glsl.cpp.i
+shaders/phong_vert_glsl.i: shaders/phong_vert_glsl.cpp.i
 
-.PHONY : shaders/convolution_frag_glsl.i
-
-# target to preprocess a source file
-shaders/convolution_frag_glsl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i
-.PHONY : shaders/convolution_frag_glsl.cpp.i
-
-shaders/convolution_frag_glsl.s: shaders/convolution_frag_glsl.cpp.s
-
-.PHONY : shaders/convolution_frag_glsl.s
-
-# target to generate assembly for a file
-shaders/convolution_frag_glsl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s
-.PHONY : shaders/convolution_frag_glsl.cpp.s
-
-shaders/convolution_vert_glsl.obj: shaders/convolution_vert_glsl.cpp.obj
-
-.PHONY : shaders/convolution_vert_glsl.obj
-
-# target to build an object file
-shaders/convolution_vert_glsl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj
-.PHONY : shaders/convolution_vert_glsl.cpp.obj
-
-shaders/convolution_vert_glsl.i: shaders/convolution_vert_glsl.cpp.i
-
-.PHONY : shaders/convolution_vert_glsl.i
+.PHONY : shaders/phong_vert_glsl.i
 
 # target to preprocess a source file
-shaders/convolution_vert_glsl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i
-.PHONY : shaders/convolution_vert_glsl.cpp.i
+shaders/phong_vert_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.i
+.PHONY : shaders/phong_vert_glsl.cpp.i
 
-shaders/convolution_vert_glsl.s: shaders/convolution_vert_glsl.cpp.s
+shaders/phong_vert_glsl.s: shaders/phong_vert_glsl.cpp.s
 
-.PHONY : shaders/convolution_vert_glsl.s
-
-# target to generate assembly for a file
-shaders/convolution_vert_glsl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s
-.PHONY : shaders/convolution_vert_glsl.cpp.s
-
-shaders/diffuse_frag_glsl.obj: shaders/diffuse_frag_glsl.cpp.obj
-
-.PHONY : shaders/diffuse_frag_glsl.obj
-
-# target to build an object file
-shaders/diffuse_frag_glsl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj
-.PHONY : shaders/diffuse_frag_glsl.cpp.obj
-
-shaders/diffuse_frag_glsl.i: shaders/diffuse_frag_glsl.cpp.i
-
-.PHONY : shaders/diffuse_frag_glsl.i
-
-# target to preprocess a source file
-shaders/diffuse_frag_glsl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i
-.PHONY : shaders/diffuse_frag_glsl.cpp.i
-
-shaders/diffuse_frag_glsl.s: shaders/diffuse_frag_glsl.cpp.s
-
-.PHONY : shaders/diffuse_frag_glsl.s
+.PHONY : shaders/phong_vert_glsl.s
 
 # target to generate assembly for a file
-shaders/diffuse_frag_glsl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s
-.PHONY : shaders/diffuse_frag_glsl.cpp.s
-
-shaders/diffuse_vert_glsl.obj: shaders/diffuse_vert_glsl.cpp.obj
-
-.PHONY : shaders/diffuse_vert_glsl.obj
-
-# target to build an object file
-shaders/diffuse_vert_glsl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj
-.PHONY : shaders/diffuse_vert_glsl.cpp.obj
-
-shaders/diffuse_vert_glsl.i: shaders/diffuse_vert_glsl.cpp.i
-
-.PHONY : shaders/diffuse_vert_glsl.i
-
-# target to preprocess a source file
-shaders/diffuse_vert_glsl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i
-.PHONY : shaders/diffuse_vert_glsl.cpp.i
-
-shaders/diffuse_vert_glsl.s: shaders/diffuse_vert_glsl.cpp.s
-
-.PHONY : shaders/diffuse_vert_glsl.s
-
-# target to generate assembly for a file
-shaders/diffuse_vert_glsl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s
-.PHONY : shaders/diffuse_vert_glsl.cpp.s
+shaders/phong_vert_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/phong_vert_glsl.cpp.s
+.PHONY : shaders/phong_vert_glsl.cpp.s
 
 shaders/texture_frag_glsl.obj: shaders/texture_frag_glsl.cpp.obj
 
@@ -685,6 +577,60 @@ shaders/texture_vert_glsl.s: shaders/texture_vert_glsl.cpp.s
 shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
+
+shaders/transparent_frag_glsl.obj: shaders/transparent_frag_glsl.cpp.obj
+
+.PHONY : shaders/transparent_frag_glsl.obj
+
+# target to build an object file
+shaders/transparent_frag_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.obj
+.PHONY : shaders/transparent_frag_glsl.cpp.obj
+
+shaders/transparent_frag_glsl.i: shaders/transparent_frag_glsl.cpp.i
+
+.PHONY : shaders/transparent_frag_glsl.i
+
+# target to preprocess a source file
+shaders/transparent_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.i
+.PHONY : shaders/transparent_frag_glsl.cpp.i
+
+shaders/transparent_frag_glsl.s: shaders/transparent_frag_glsl.cpp.s
+
+.PHONY : shaders/transparent_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/transparent_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/transparent_frag_glsl.cpp.s
+.PHONY : shaders/transparent_frag_glsl.cpp.s
+
+shaders/transparent_vert_glsl.obj: shaders/transparent_vert_glsl.cpp.obj
+
+.PHONY : shaders/transparent_vert_glsl.obj
+
+# target to build an object file
+shaders/transparent_vert_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.obj
+.PHONY : shaders/transparent_vert_glsl.cpp.obj
+
+shaders/transparent_vert_glsl.i: shaders/transparent_vert_glsl.cpp.i
+
+.PHONY : shaders/transparent_vert_glsl.i
+
+# target to preprocess a source file
+shaders/transparent_vert_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.i
+.PHONY : shaders/transparent_vert_glsl.cpp.i
+
+shaders/transparent_vert_glsl.s: shaders/transparent_vert_glsl.cpp.s
+
+.PHONY : shaders/transparent_vert_glsl.s
+
+# target to generate assembly for a file
+shaders/transparent_vert_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/transparent_vert_glsl.cpp.s
+.PHONY : shaders/transparent_vert_glsl.cpp.s
 
 src/beam.obj: src/beam.cpp.obj
 
@@ -1215,30 +1161,24 @@ help:
 	@echo ... ppgso/window.obj
 	@echo ... ppgso/window.i
 	@echo ... ppgso/window.s
-	@echo ... shaders/color_frag_glsl.obj
-	@echo ... shaders/color_frag_glsl.i
-	@echo ... shaders/color_frag_glsl.s
-	@echo ... shaders/color_vert_glsl.obj
-	@echo ... shaders/color_vert_glsl.i
-	@echo ... shaders/color_vert_glsl.s
-	@echo ... shaders/convolution_frag_glsl.obj
-	@echo ... shaders/convolution_frag_glsl.i
-	@echo ... shaders/convolution_frag_glsl.s
-	@echo ... shaders/convolution_vert_glsl.obj
-	@echo ... shaders/convolution_vert_glsl.i
-	@echo ... shaders/convolution_vert_glsl.s
-	@echo ... shaders/diffuse_frag_glsl.obj
-	@echo ... shaders/diffuse_frag_glsl.i
-	@echo ... shaders/diffuse_frag_glsl.s
-	@echo ... shaders/diffuse_vert_glsl.obj
-	@echo ... shaders/diffuse_vert_glsl.i
-	@echo ... shaders/diffuse_vert_glsl.s
+	@echo ... shaders/phong_frag_glsl.obj
+	@echo ... shaders/phong_frag_glsl.i
+	@echo ... shaders/phong_frag_glsl.s
+	@echo ... shaders/phong_vert_glsl.obj
+	@echo ... shaders/phong_vert_glsl.i
+	@echo ... shaders/phong_vert_glsl.s
 	@echo ... shaders/texture_frag_glsl.obj
 	@echo ... shaders/texture_frag_glsl.i
 	@echo ... shaders/texture_frag_glsl.s
 	@echo ... shaders/texture_vert_glsl.obj
 	@echo ... shaders/texture_vert_glsl.i
 	@echo ... shaders/texture_vert_glsl.s
+	@echo ... shaders/transparent_frag_glsl.obj
+	@echo ... shaders/transparent_frag_glsl.i
+	@echo ... shaders/transparent_frag_glsl.s
+	@echo ... shaders/transparent_vert_glsl.obj
+	@echo ... shaders/transparent_vert_glsl.i
+	@echo ... shaders/transparent_vert_glsl.s
 	@echo ... src/beam.obj
 	@echo ... src/beam.i
 	@echo ... src/beam.s

@@ -282,58 +282,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_frag_glsl.cpp">
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_frag_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_frag_glsl.cpp.rule">
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_frag_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_frag_glsl.h">
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_frag_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_vert_glsl.cpp">
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_vert_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_vert_glsl.cpp.rule">
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_vert_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/color_vert_glsl.h">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_frag_glsl.cpp">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_frag_glsl.cpp.rule">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_frag_glsl.h">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_vert_glsl.cpp">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_vert_glsl.cpp.rule">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/convolution_vert_glsl.h">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_frag_glsl.cpp">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_frag_glsl.cpp.rule">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_frag_glsl.h">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_vert_glsl.cpp">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_vert_glsl.cpp.rule">
-			<Option target="shaders"/>
-		</Unit>
-		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/diffuse_vert_glsl.h">
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_vert_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
 		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_frag_glsl.cpp">
@@ -352,6 +316,18 @@
 			<Option target="shaders"/>
 		</Unit>
 		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_vert_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
 		<Unit filename="D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/main.cpp">

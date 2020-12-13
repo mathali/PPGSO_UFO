@@ -2,8 +2,8 @@
 #include "grass.h"
 #include "player.h"
 
-#include <shaders/diffuse_vert_glsl.h>
-#include <shaders/diffuse_frag_glsl.h>
+#include <shaders/phong_vert_glsl.h>
+#include <shaders/phong_frag_glsl.h>
 
 
 // Static resources
@@ -17,9 +17,9 @@ Grass::Grass() {
     //rotation = {-ppgso::PI/2, 0, 0};
 
     // Initialize static resources if needed
-    if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+    if (!shader) shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
     if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("nature/grass.bmp"));
-    if (!mesh) mesh = std::make_unique<ppgso::Mesh>("nature/Trava Kolosok.obj");
+    if (!mesh) mesh = std::make_unique<ppgso::Mesh>("nature/grass.obj");
 }
 
 bool Grass::update(Scene &scene, float dt) {

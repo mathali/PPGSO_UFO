@@ -5,8 +5,8 @@
 #include "tree.h"
 #include "house.h"
 
-#include <shaders/diffuse_vert_glsl.h>
-#include <shaders/diffuse_frag_glsl.h>
+#include <shaders/phong_vert_glsl.h>
+#include <shaders/phong_frag_glsl.h>
 
 
 // Static resources
@@ -22,7 +22,7 @@ Cow::Cow() {
   rotMomentum = glm::ballRand(ppgso::PI);
 
   // Initialize static resources if needed
-  if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+  if (!shader) shader = std::make_unique<ppgso::Shader>(phong_vert_glsl, phong_frag_glsl);
   if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("Bull_texture.bmp"));
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("bull.obj");
 }

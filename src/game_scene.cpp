@@ -1,14 +1,3 @@
-// Example gl_scene
-// - Introduces the concept of a dynamic scene of objects
-// - Uses abstract object interface for Update and Render steps
-// - Creates a simple game scene with Player, Cow and Ground objects
-// - Contains a generator object that does not render but adds Cows to the scene
-// - Some objects use shared resources and all object deallocations are handled automatically
-// - Controls: LEFT, RIGHT, "R" to reset, SPACE to fire
-
-#include <iostream>
-#include <map>
-#include <list>
 #include <string>
 #include <glm/gtx/matrix_interpolation.hpp>
 
@@ -22,8 +11,6 @@
 #include "cow.h"
 #include "room_wall.h"
 #include "cage.h"
-
-const unsigned int SIZE = 512;
 
 int count = 0;
 
@@ -73,7 +60,7 @@ private:
 
     // Add player to the scene
     auto player = std::make_unique<Player>();
-    player->position.y = -3;  //TODO: ORIGINAL -5
+    player->position.y = -3;
     scene.objects.push_back(move(player));
   }
 
@@ -142,7 +129,7 @@ public:
   /*!
    * Construct custom game window
    */
-  SceneWindow() : Window{"gl9_scene", 1280, 720} {
+  SceneWindow() : Window{"game_scene", 1280, 720} {
     //hideCursor();
     glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
 
