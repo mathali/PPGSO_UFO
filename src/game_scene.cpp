@@ -220,7 +220,7 @@ public:
 
 
     // Update and render all objects
-    if(scene.timer < 30.0f || scene.secondScene) {
+    if(scene.timer < 60.0f || scene.secondScene) {
         scene.update(dt);
         scene.render();
         if(scene.secondScene){

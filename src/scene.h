@@ -32,7 +32,7 @@ class Scene {
      * @param direction - Direction to pick objects from
      * @return Objects - Vector of pointers to intersected objects
      */
-    std::vector<Object*> intersect(const glm::vec3 &position, const glm::vec3 &direction);
+    //std::vector<Object*> intersect(const glm::vec3 &position, const glm::vec3 &direction);
 
     // Camera object
     std::unique_ptr<Camera> camera;

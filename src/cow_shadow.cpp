@@ -35,6 +35,13 @@ bool Cow_shadow::update(Scene &scene, float dt) {
     }
     else {
         scale.y = scene.lightDirection.x / 5;
+        if(abs(parent->rotation.z) > ppgso::PI/2){
+            scale.z = 0.02f + (0.18f * ((abs(parent->rotation.z)-ppgso::PI/2)/(ppgso::PI/2)));
+        }
+        else{
+            scale.z = 0.2f - (0.18f * (abs(parent->rotation.z)/(ppgso::PI/2)));
+        }
+        //scale.z = 0.2f - (0.18f * abs())
         scale.x = 0.02f;
         rotation.y = ppgso::PI/2;
         rotation.z = 0;
@@ -43,7 +50,7 @@ bool Cow_shadow::update(Scene &scene, float dt) {
     position.x = parent->position.x;
     position.z = parent->position.z;
     //rotation.x = parent->rotation.x;
-    //rotation.z = 0;//parent->rotation.z;
+    //rotation.z = parent->rotation.z;
     generateModelMatrix();
 
     return true;
