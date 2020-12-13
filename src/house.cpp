@@ -1,7 +1,6 @@
 #include <glm/gtc/random.hpp>
 #include "house.h"
 #include "explosion.h"
-#include "player.h"
 
 #include <shaders/phong_vert_glsl.h>
 #include <shaders/phong_frag_glsl.h>
@@ -105,10 +104,3 @@ void House::render(Scene &scene) {
     shader->setUniform("Texture", *texture);
     mesh->render();
 }
-
-void House::onClick(Scene &scene) {
-    std::cout << "Asteroid clicked!" << std::endl;
-    //explode(scene, position, {10.0f, 10.0f, 10.0f}, 0 );
-    age = 10000;
-}
-

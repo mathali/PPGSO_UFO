@@ -52,10 +52,10 @@ bool Cow::update(Scene &scene, float dt) {
         keep = false;
     }
 
-    auto house_shadow = dynamic_cast<House_shadow*>(obj.get()); // dynamic_pointer_cast<Cow>(obj);
+    /*auto house_shadow = dynamic_cast<House_shadow*>(obj.get()); // dynamic_pointer_cast<Cow>(obj);
     if(house_shadow && caught && (abs(position.x - house_shadow->position.x) <= 4 && abs(position.z - house_shadow->position.z) <= 4)){
         house_shadow->age = 100.0f;
-    }
+    }*/
     if(!keep)return false;
     auto beam = dynamic_cast<Beam*>(obj.get());
 

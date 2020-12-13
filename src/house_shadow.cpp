@@ -10,8 +10,9 @@ std::unique_ptr<ppgso::Mesh> House_shadow::mesh;
 std::unique_ptr<ppgso::Texture> House_shadow::texture;
 std::unique_ptr<ppgso::Shader> House_shadow::shader;
 
-House_shadow::House_shadow() {
+House_shadow::House_shadow(std::shared_ptr<House> par) {
     // Set random scale speed and rotation
+    parent = move(par);
     scale *=  0.004f;//glm::linearRand(1.0f, 3.0f);
     rotation = {0, 0, glm::linearRand(-3.0f, 3.0f)};
 
@@ -23,6 +24,7 @@ House_shadow::House_shadow() {
 bool House_shadow::update(Scene &scene, float dt) {
     // Delete when alive longer than 10s or out of visibility
     if (age > 10.0f || position.y < -10) return false;
+    if(parent->age > 0.0f) return false;
     generateModelMatrix();
 
     return true;

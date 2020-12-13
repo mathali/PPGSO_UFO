@@ -102,12 +102,11 @@ bool Generator::update(Scene &scene, float dt) {
                   occupied[i][j] = true;
               }
           }
-          auto obj = std::make_unique<House>();
+          auto obj = std::make_shared<House>();
           obj->position = position;
           obj->position.x = rand_x;
           obj->position.z = rand_z;
-          auto house_shadow = std::make_unique<House_shadow>();
-          obj->shadow = reinterpret_cast<House_shadow *>(&house_shadow);
+          auto house_shadow = std::make_unique<House_shadow>(obj);
           house_shadow->position = obj->position;
           house_shadow->original_position = obj->position;
           house_shadow->position.x += 1;

@@ -5,6 +5,7 @@
 
 #include "scene.h"
 #include "object.h"
+#include "house.h"
 
 /*!
  * Simple house object
@@ -18,13 +19,14 @@ private:
     static std::unique_ptr<ppgso::Shader> shader;
     static std::unique_ptr<ppgso::Texture> texture;
 
+    std::shared_ptr<House> parent;
 
 public:
     glm::vec3 original_position;
     /*!
      * Create new asteroid
      */
-    House_shadow();
+    House_shadow(std::shared_ptr<House> par);
 
     /*!
      * Update asteroid
@@ -42,6 +44,8 @@ public:
 
 // Age of the object in seconds
 float age{0.0f};
+
+
 private:
 };
 

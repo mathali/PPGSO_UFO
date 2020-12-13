@@ -5,7 +5,6 @@
 
 #include "scene.h"
 #include "object.h"
-#include "house_shadow.h"
 
 /*!
  * Simple house object
@@ -19,9 +18,6 @@ private:
     static std::unique_ptr<ppgso::Shader> shader;
     static std::unique_ptr<ppgso::Texture> texture;
 
-    // Age of the object in seconds
-    float age{0.0f};
-
     glm::vec3 Ka = {0.024155, 0.024155, 0.024155};
     glm::vec3 Kd = {0.737255, 0.737255, 0.737255};
     glm::vec3 Ks = {0.034077, 0.034077, 0.034077};
@@ -29,7 +25,6 @@ private:
 
 
 public:
-    House_shadow* shadow;
     /*!
      * Create new asteroid
      */
@@ -50,11 +45,6 @@ public:
     void render(Scene &scene) override;
 
     /*!
-     * Custom click event for asteroid
-     */
-    void onClick(Scene &scene) override;
-
-    /*!
      * Split the asteroid into multiple pieces and spawn an explosion object.
      *
      * @param scene - Scene to place pieces and explosion into
@@ -64,6 +54,8 @@ public:
      */
     void explode(Scene &scene, glm::vec3 explosionPosition, glm::vec3 explosionScale, int pieces);
 
+// Age of the object in seconds
+float age{0.0f};
 private:
 };
 
