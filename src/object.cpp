@@ -6,6 +6,8 @@
 
 #include "object.h"
 
+// From gl 9
+// create a model matrix based on vectors the object has received
 void Object::generateModelMatrix() {
   modelMatrix =
           glm::translate(glm::mat4(1.0f), position)

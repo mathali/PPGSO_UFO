@@ -7,6 +7,10 @@ Camera::Camera(float fow, float ratio, float near, float far) {
   float fowInRad = (ppgso::PI/180.0f) * fow;
 
   projectionMatrix = glm::perspective(fowInRad, ratio, near, far);
+
+  /*
+   * Initiate and hold keyframes that are used to animate the camera
+   */
   first.matrix = {
           {0.7071,  0, -0.7071, 0},
           {0, 1, 0, 0},
@@ -70,6 +74,7 @@ void Camera::update() {
   }
 }
 
+// From gl9
 glm::vec3 Camera::cast(double u, double v) {
   // Create point in Screen coordinates
   glm::vec4 screenPosition{u,v,0.0f,1.0f};

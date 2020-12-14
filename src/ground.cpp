@@ -5,10 +5,8 @@
 #include <shaders/phong_frag_glsl.h>
 
 
-
+// Squares that represent the ground of the first scene
 Ground::Ground() {
-  // Initialize static resources if needed
-
   position = {0, -12, 0};
   rotation = {-ppgso::PI/2, 0, 0};
   scale = {20, 20, 1};
@@ -26,7 +24,6 @@ void Ground::render(Scene &scene) {
 
     shader->use();
 
-    // Set up light
     shader->setUniform("LightDirection", scene.lightDirection);
     shader->setUniform("Ambient", scene.ambient);
     shader->setUniform("SpecularStrength", scene.specularStrength);
@@ -44,18 +41,15 @@ void Ground::render(Scene &scene) {
     shader->setUniform("BeamCutoff", scene.beam_cutoff);
 
 
-    // use camera
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);
     shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
 
-    // render mesh
     shader->setUniform("ModelMatrix", modelMatrix);
     shader->setUniform("Texture", *texture);
     mesh->render();
 
 }
 
-// shared resources
 std::unique_ptr<ppgso::Mesh> Ground::mesh;
 std::unique_ptr<ppgso::Shader> Ground::shader;
 std::unique_ptr<ppgso::Texture> Ground::texture;

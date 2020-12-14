@@ -11,14 +11,18 @@
 #include "tree_shadow.h"
 #include "cow_shadow.h"
 
+// Object responsible for procedurally generating most other objects in the scene
 bool Generator::update(Scene &scene, float dt) {
 
   unsigned int no_objects = scene.objects.size();
-  if(!flag && no_objects < 500) {
+  if(!flag && no_objects < 500) { // Limit the number of objects that can be generated
+                        // Prevents overlapping generation and reduces resource strain by not working with objects that the player cannot see
       for (auto &obj : scene.objects) {
           if (obj.get() == this) continue;
           auto player = dynamic_cast<Player *>(obj.get());
+          // Move the generator position if the player is too far from the original position
           if (player && (abs(position.x - player->position.x) >= 40 || abs(position.z - player->position.z) >= 40)) {
+              // Choose where to generate a new patch of objects based on the direction the player is heading
               switch (player->direction){
                   case 0:
                       position.x = player->position.x+40;
@@ -59,23 +63,29 @@ bool Generator::update(Scene &scene, float dt) {
       }
   }
 
-  // Accumulate time
   time += dt;
   float pos_x = position.x - 40;
   float pos_z = position.z - 40;
 
-  // Add object to scene when time reaches certain level time > .3
+  // Generate objects on a fresh patch of land
   if (flag) {
-      bool occupied[100][100];
+      bool occupied[100][100];          // Keep a checkboard pattern to remember which parts are occupied
+      // Offsets specify how much space a given object takes up
       short unsigned int offset_cow = 2;
       short unsigned int offset_house = 6;
       short unsigned int offset_grass = 0.5;
+
+      // Generate 25 cows on random unoccupied positions
       for( int x = 0; x < 25; x++) {
           int rand_x, rand_z;
+
+          // Generate coordinates until you find an empty space
           do {
               rand_x = int(pos_x) + glm::linearRand(0, 80);
               rand_z = int(pos_z) + glm::linearRand(0, 80);
           }while(occupied[rand_x - int(pos_x)][rand_z - int(pos_z)]);
+
+          // Mark the surrounding squares as occupied
           for(int i = (rand_x - int(pos_x))-offset_cow; i < (rand_x - int(pos_x))+offset_cow; i++){
               for(int j = (rand_z - int(pos_z))-offset_cow; j < (rand_z - int(pos_z))+offset_cow; j++){
                   occupied[i][j] = true;
@@ -90,13 +100,19 @@ bool Generator::update(Scene &scene, float dt) {
           scene.objects.push_back(move(obj));
           scene.objects.push_back(move(cow_shadow));
       }
+
+      // Generate a random amount of houses
       for( int x = 0; x < glm::linearRand(8, 12); x++) {
 
           int rand_x, rand_z;
+
+          // Generate coordinates until you find an empty space
           do {
               rand_x = int(pos_x) + glm::linearRand(0, 80);
               rand_z = int(pos_z) + glm::linearRand(0, 80);
           }while(occupied[rand_x - int(pos_x)][rand_z - int(pos_z)]);
+
+          // Mark surrounding squares as occupied
           for(int i = (rand_x - int(pos_x))-offset_house; i < (rand_x - int(pos_x))+offset_house; i++){
               for(int j = (rand_z - int(pos_z))-offset_house; j < (rand_z - int(pos_z))+offset_house; j++){
                   occupied[i][j] = true;
@@ -115,13 +131,19 @@ bool Generator::update(Scene &scene, float dt) {
           scene.objects.push_back(move(obj));
           scene.objects.push_back(move(house_shadow));
       }
+
+      // Generate a random amount of trees
       for( int x = 0; x < glm::linearRand(8, 12); x++) {
 
           int rand_x, rand_z;
+
+          // Generate coordinates until you find an empty space
           do {
               rand_x = int(pos_x) + glm::linearRand(0, 80);
               rand_z = int(pos_z) + glm::linearRand(0, 80);
           }while(occupied[rand_x - int(pos_x)][rand_z - int(pos_z)]);
+
+          // Mark surrounding squares as occupied
           for(int i = (rand_x - int(pos_x))-offset_cow; i < (rand_x - int(pos_x))+offset_cow; i++){
               for(int j = (rand_z - int(pos_z))-offset_cow; j < (rand_z - int(pos_z))+offset_cow; j++){
                   occupied[i][j] = true;
@@ -145,13 +167,19 @@ bool Generator::update(Scene &scene, float dt) {
           scene.objects.push_back(move(obj1));
           scene.objects.push_back(move(tree_shadow));
       }
+
+      // Generate a random amount of grass tufts
       for( int x = 0; x < glm::linearRand(80, 120); x++) {
 
           int rand_x, rand_z;
+
+          // Generate coordinates until you find an empty space
           do {
               rand_x = int(pos_x) + glm::linearRand(0, 80);
               rand_z = int(pos_z) + glm::linearRand(0, 80);
           }while(occupied[rand_x - int(pos_x)][rand_z - int(pos_z)]);
+
+          // Mark surrounding squares as occupied
           for(int i = (rand_x - int(pos_x))-offset_grass; i < (rand_x - int(pos_x))+offset_grass; i++){
               for(int j = (rand_z - int(pos_z))-offset_grass; j < (rand_z - int(pos_z))+offset_grass; j++){
                   occupied[i][j] = true;
@@ -170,6 +198,4 @@ bool Generator::update(Scene &scene, float dt) {
   return true;
 }
 
-void Generator::render(Scene &scene) {
-  // Generator will not be rendered
-}
+void Generator::render(Scene &scene) {}

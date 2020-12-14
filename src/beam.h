@@ -2,10 +2,8 @@
 #include <ppgso/ppgso.h>
 
 #include "object.h"
+#include "player.h"
 
-/*!
- * Object representing a rocket projectile that will accelerate from the ship one created
- */
 class Beam final : public Object {
 private:
   static std::unique_ptr<ppgso::Shader> shader;
@@ -14,29 +12,12 @@ private:
 
   float age{0.0f};
   glm::vec3 speed;
+  Player *parent;
 public:
-  /*
-   * Create new projectile
-   */
-  Beam();
+  Beam(Player *par);
 
-  /*!
-   * Update projectile position
-   * @param scene Scene to update
-   * @param dt Time delta
-   * @return true to delete the object
-   */
   bool update(Scene &scene, float dt) override;
 
-  /*!
-   * Render projectile
-   * @param scene Scene to render in
-   */
   void render(Scene &scene) override;
-
-  /*!
-   * Destroy the projectile
-   */
-  void destroy();
 };
 

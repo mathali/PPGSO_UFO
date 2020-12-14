@@ -4,11 +4,8 @@
 #include <shaders/phong_vert_glsl.h>
 #include <shaders/phong_frag_glsl.h>
 
-
-
+// Square objects used to build the room that houses cows in the second scene
 Room_wall::Room_wall() {
-    // Initialize static resources if needed
-
     position = {0, -12, 0};
     rotation = {-ppgso::PI/2, 0, 0};
     scale = {20, 20, 1};
@@ -18,22 +15,13 @@ Room_wall::Room_wall() {
 }
 
 bool Room_wall::update(Scene &scene, float dt) {
-    // Offset for UV mapping, creates illusion of scrolling
-    //textureOffset.y -= dt/5;
-    //position.y = -0.5;
-    //rotation = {1, 0, 0};
-    //scale *= 1.f;
     generateModelMatrix();
     return true;
 }
 
 void Room_wall::render(Scene &scene) {
-    // Disable writing to the depth buffer so we render a "background"
-    //glDepthMask(GL_FALSE);
-
     shader->use();
 
-    // Set up light
     shader->setUniform("LightDirection", scene.lightDirection);
     shader->setUniform("Ambient", scene.ambient);
     shader->setUniform("SpecularStrength", scene.specularStrength);
@@ -51,7 +39,6 @@ void Room_wall::render(Scene &scene) {
     shader->setUniform("BeamCutoff", scene.beam_cutoff);
 
 
-    // use camera
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);
     shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
 
@@ -59,8 +46,6 @@ void Room_wall::render(Scene &scene) {
     shader->setUniform("ModelMatrix", modelMatrix);
     shader->setUniform("Texture", *texture);
     mesh->render();
-
-    //glDepthMask(GL_TRUE);
 }
 
 // shared resources

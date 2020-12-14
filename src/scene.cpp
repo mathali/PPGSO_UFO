@@ -9,16 +9,16 @@
 
 void Scene::update(float time) {
   camera->update();
+  // Move lightDirection according to elapsed time to simulate the movement of the sun
   lightDirection = {-2.5f+abs(sin(timer/40)*5), glm::clamp(abs(1+sin(timer/14)*2), 1.0, 3.0), 0};
   timer += time;
 
 
-  // Use iterator to update all objects so we can remove while iterating
   auto i = std::begin(objects);
   while (i != std::end(objects)) {
-    // Update and remove from list if needed
     auto player = dynamic_cast<Player*>(i->get());
     if(player){
+        // move beam along with the player object if it is activated
         beam_flag = player->beam_flag;
         player_pos.x = player->position.x;
         player_pos.z = player->position.z;
@@ -27,6 +27,11 @@ void Scene::update(float time) {
             beam_direction = {0, -1, 0};
         }
     }
+
+    /*
+     * The following section specifies the movement and transformation of shadows in accordance with the movement
+     * of the 'Sun'
+     */
 
     auto house_shadow = dynamic_cast<House_shadow*>(i->get());
     if(house_shadow){
@@ -61,6 +66,8 @@ void Scene::update(float time) {
         }
     }
 
+    // Move the generated ground squares according to the position of the player to create an illusion of a continuos
+    // surface
     auto ground = dynamic_cast<Ground*>(i->get());
     if(ground){
         if(ground->position.x - player_pos.x >= 90 ) {
@@ -82,7 +89,8 @@ void Scene::update(float time) {
 
     auto obj = i->get();
 
-    if(!ground &&  !generator && (abs(obj->position.x - player_pos.x) >= 80 || abs(obj->position.z - player_pos.z) >= 80)){ // Remove objects that are too distant
+    // Remove objects that are too distant
+    if(!ground &&  !generator && (abs(obj->position.x - player_pos.x) >= 80 || abs(obj->position.z - player_pos.z) >= 80)){
         objects.erase(i);
         ++i;
         continue;
@@ -96,10 +104,10 @@ void Scene::update(float time) {
 }
 
 void Scene::render() {
-  // Simply render all objects
   Beam *beam = nullptr;
   auto i = std::begin(objects);
   while (i != std::end(objects)){
+      // modified rendering structure to make sure the beam always renders last, otherwise it's transparency breaks
       auto beam_holder = dynamic_cast<Beam*>(i->get());
       if(beam_holder) {
           beam = beam_holder;
@@ -114,35 +122,3 @@ void Scene::render() {
       beam->render(*this);
   }
 }
-
-/*std::vector<Object*> Scene::intersect(const glm::vec3 &position, const glm::vec3 &direction) {
-  std::vector<Object*> intersected = {};
-  for(auto& object : objects) {
-    // Collision with sphere of size object->scale.x
-    auto oc = position - object->position;
-    auto radius = object->scale.x;
-    auto a = glm::dot(direction, direction);
-    auto b = glm::dot(oc, direction);
-    auto c = glm::dot(oc, oc) - radius * radius;
-    auto dis = b * b - a * c;
-
-    if (dis > 0) {
-      auto e = sqrt(dis);
-      auto t = (-b - e) / a;
-
-      if ( t > 0 ) {
-        intersected.push_back(object.get());
-        continue;
-      }
-
-      t = (-b + e) / a;
-
-      if ( t > 0 ) {
-        intersected.push_back(object.get());
-        continue;
-      }
-    }
-  }
-
-  return intersected;
-}*/

@@ -4,11 +4,8 @@
 #include <shaders/phong_vert_glsl.h>
 #include <shaders/phong_frag_glsl.h>
 
-
-
+// Object that represents the cages that hold cows in the second scene
 Cage::Cage() {
-    // Initialize static resources if needed
-
     position = {0, 0, 0};
     rotation = {-ppgso::PI/2, 0, 0};
     scale = {0.1, 0.1, 0.1};
@@ -26,7 +23,6 @@ void Cage::render(Scene &scene) {
 
     shader->use();
 
-    // Set up light
     shader->setUniform("LightDirection", scene.lightDirection);
     shader->setUniform("Ambient", scene.ambient);
     shader->setUniform("SpecularStrength", scene.specularStrength);
@@ -43,19 +39,15 @@ void Cage::render(Scene &scene) {
     shader->setUniform("BeamColor", scene.beam_color);
     shader->setUniform("BeamCutoff", scene.beam_cutoff);
 
-
-    // use camera
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);
     shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
 
-    // render mesh
     shader->setUniform("ModelMatrix", modelMatrix);
     shader->setUniform("Texture", *texture);
     mesh->render();
 
 }
 
-// shared resources
 std::unique_ptr<ppgso::Mesh> Cage::mesh;
 std::unique_ptr<ppgso::Shader> Cage::shader;
 std::unique_ptr<ppgso::Texture> Cage::texture;

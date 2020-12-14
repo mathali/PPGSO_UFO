@@ -14,17 +14,15 @@
 
 int count = 0;
 
-/*!
- * Custom windows for our simple game
- */
+// Create main window to render the game in
 class SceneWindow : public ppgso::Window {
 private:
   Scene scene;
   bool animate = true;
 
-  /*!
-   * Reset and initialize the game scene
-   * Creating unique smart pointers to objects that are stored in the scene object list
+  /*
+   * First Scene
+   * Control a UFO and abduct cows
    */
   void initScene() {
     scene.scene1 = true;
@@ -33,15 +31,15 @@ private:
     scene.objects.clear();
     scene.timer = 0.0f;
 
-    // Create a camera
+    // Create a camera with a perspective projection
     auto camera = std::make_unique<Camera>(75.0f, 1.0f, 0.1f, 100.0f);
     camera->position.z = -15.0f;
     camera->position.y = 7.0f;
     camera->secondScene = false;
     scene.camera = move(camera);
 
-    // Add ground background
 
+    // Create square floor objects that are moved around as the player moves
     float ground_pos;
     for (int i = 0; i < 5; i++) {
         for (int j = 0; j < 5; j++) {
@@ -53,22 +51,28 @@ private:
     }
 
 
-    // Add generator to scene
+    // Create a generator responsibly for the procedural generation of most objects in the scene
     auto generator = std::make_unique<Generator>();
     generator->position = {0, ground_pos + 0.8f, 0};
     scene.objects.push_back(move(generator));
 
-    // Add player to the scene
+    // Create a UFO object to represent the player
     auto player = std::make_unique<Player>();
     player->position.y = -3;
     scene.objects.push_back(move(player));
   }
 
+  /*
+   * Second Scene
+   * Look at the display of cows the player has abducted. Camera is controlled using keyframes
+   */
   void initSecondScene(){
       scene.scene1 = false;
-      scene.objects.clear();
+      scene.objects.clear();            // Destroy everything from the previous scene
       scene.player_pos.x = 0;
       scene.player_pos.z = 0;
+
+      // Recreate a camera, same parameters as last time, but different position
       auto camera = std::make_unique<Camera>(75.0f, 1.0f, 0.1f, 100.0f);
       camera->position.z = -20.0f;
       camera->position.x = 0.0f;
@@ -77,13 +81,14 @@ private:
       camera->back = {camera->position.x, 0, camera->position.z};
       scene.camera = move(camera);
 
+      // Generate cages that are filled with the abducted cows
       for(int j = 0; j < 4; j++)
           for(int i = 0; i < 7; i++) {
               auto cage = std::make_unique<Cage>();
               cage->position = {15 + -5*i, 1, j*10 - 15};
               scene.objects.push_back(move(cage));
 
-              if(scene.captured > 0) {
+              if(scene.captured > 0) {  // Fill cages until they are all filled or we run out of cows
                   auto cow = std::make_unique<Cow>();
                   cow->position = {15 + -5 * i + 2.2, 3.5, j * 10 - 15 - 2.2};
                   cow->scale = {0.5, 0.5, 0.5};
@@ -92,6 +97,9 @@ private:
                   scene.captured--;
               }
           }
+
+      // Create a room for the cages.
+      // Created using seperate wall objects - I couldn't find a fitting free model so I had to do it this way.
       auto floor = std::make_unique<Room_wall>();
       floor->position = {0, 0, 0};
       scene.objects.push_back(move(floor));
@@ -126,9 +134,8 @@ private:
 
   }
 public:
-  /*!
-   * Construct custom game window
-   */
+
+  // Consturctor from gl9, slightly modified parameters
   SceneWindow() : Window{"game_scene", 1280, 720} {
     //hideCursor();
     glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
@@ -150,13 +157,7 @@ public:
     initScene();
   }
 
-  /*!
-   * Handles pressed key when the window is focused
-   * @param key Key code of the key being pressed/released
-   * @param scanCode Scan code of the key being pressed/released
-   * @param action Action indicating the key state change
-   * @param mods Additional modifiers to consider
-   */
+  // Modified onKey function used for overall scene controls
   void onKey(int key, int scanCode, int action, int mods) override {
     scene.keyboard[key] = action;
 
@@ -165,6 +166,7 @@ public:
       initScene();
     }
 
+    // Use numbers to change the color of the beam and the light it emits
     if (key == GLFW_KEY_1 && action == GLFW_PRESS) {
         scene.beam_color = {0, 1, 0};
     }
@@ -176,6 +178,8 @@ public:
     if (key == GLFW_KEY_3 && action == GLFW_PRESS) {
         scene.beam_color = {0, 0, 1};
     }
+
+    // Move the camera up and down
     if (key == GLFW_KEY_UP) {
         scene.camera->position.z += 0.1f;
         scene.camera->position.y -= 0.1f;
@@ -186,24 +190,23 @@ public:
         scene.camera->position.y += 0.1f;
     }
 
-    // Pause
+    /*// Pause
     if (key == GLFW_KEY_P && action == GLFW_PRESS) {
       animate = !animate;
-    }
+    }*/
   }
 
-    glm::mat4 bezierPoint(const glm::mat4 CP0,const glm::mat4 CP1,const glm::mat4 CP2 , float t) {
-        glm::mat4 out;
-        glm::mat4 supp1_1 = glm::interpolate(CP0, CP1, t);
-        glm::mat4 supp1_2 = glm::interpolate(CP1, CP2, t);
-        out = glm::interpolate(supp1_1, supp1_2, t);
+  // Interpolate keyFrame matrices on a bezier curve - used for second scene camera animation
+  glm::mat4 bezierPoint(const glm::mat4 CP0,const glm::mat4 CP1,const glm::mat4 CP2 , float t) {
+      glm::mat4 out;
+      glm::mat4 supp1_1 = glm::interpolate(CP0, CP1, t);
+      glm::mat4 supp1_2 = glm::interpolate(CP1, CP2, t);
+      out = glm::interpolate(supp1_1, supp1_2, t);
 
-        return out;
-    }
+      return out;
+  }
 
-  /*!
-   * Window update implementation that will be called automatically from pollEvents
-   */
+  // Modified gl9 on idle to represent the functionality of this games 2 scenes
   void onIdle() override {
     // Track time
     static auto time = (float) glfwGetTime();
@@ -219,11 +222,13 @@ public:
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 
-    // Update and render all objects
+    // Update and render all objects if we are in the second scene or the first scene's time limit hasn't run out
     if(scene.timer < 60.0f || scene.secondScene) {
         scene.update(dt);
         scene.render();
+        // Handle the camera's keyframe animation if we are rendering the second scene
         if(scene.secondScene){
+            // Calculate a point on a bezier curve based on keyframe structs that belong to the camera object
             if(scene.timer < scene.camera->second.t) {
                 scene.camera->viewMatrix = bezierPoint(scene.camera->first.matrix, scene.camera->second.matrix, scene.camera->third.matrix,
                                                        scene.timer / (scene.camera->second.t - scene.camera->first.t));
@@ -245,6 +250,7 @@ public:
             scene.timer += dt;
         }
     }
+    // Switch scenes
     else{
         initSecondScene();
         scene.secondScene = true;
