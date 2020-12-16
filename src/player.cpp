@@ -23,8 +23,10 @@ Player::Player() {
 bool Player::update(Scene &scene, float dt) {
   fireDelay += dt;
 
-  // Handle the movement of the player model
-  // Also update the camera to stay in the same relative position
+  /**
+  * Handle the movement of the player model
+  * Also update the camera to stay in the same relative position
+  */
   if(scene.keyboard[GLFW_KEY_A]) {
     direction = 0;
     position.x += 15 * dt;

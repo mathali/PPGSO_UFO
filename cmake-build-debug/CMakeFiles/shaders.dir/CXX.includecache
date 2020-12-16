@@ -6,35 +6,11 @@
 
 #IncludeRegexTransform: 
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_frag_glsl.cpp
-texture_frag_glsl.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_frag_glsl.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_vert_glsl.cpp
+phong_vert_glsl.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_vert_glsl.h
 
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_frag_glsl.h
-string
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_vert_glsl.cpp
-texture_vert_glsl.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_vert_glsl.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/texture_vert_glsl.h
-string
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.cpp
-transparent_frag_glsl.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_frag_glsl.h
-string
--
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.cpp
-transparent_vert_glsl.h
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.h
-
-D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/transparent_vert_glsl.h
+D:/Dokumenty/FIIT/5. semester/PPGSO/projekt/cmake-build-debug/shaders/phong_vert_glsl.h
 string
 -
 

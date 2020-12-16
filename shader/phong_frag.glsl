@@ -1,18 +1,12 @@
 #version 330
-// A texture is expected as program attribute
 uniform sampler2D Texture;
 
-// Direction of light
 uniform vec3 LightDirection;
 
 uniform vec3 ViewPosition;
 
 uniform vec3 Ambient;
 
-// (optional) Transparency
-uniform float Transparency;
-
-// (optional) Texture offset
 uniform vec2 TextureOffset;
 
 uniform vec3 Ks;

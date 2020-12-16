@@ -198,8 +198,10 @@ void Cow::movementAnimation(Scene &scene, bool c_flag, float dt) {
         }
     }
 
-    // Detects if they are getting close to another object
-    // If they are, reset the animation and try to move away
+    /**
+    * Detects if they are getting close to another object
+    * If they are, reset the animation and try to move away
+     */
     for (auto &obj : scene.objects) {
         auto cow = dynamic_cast<Cow *>(obj.get());
         auto house = dynamic_cast<House *>(obj.get());

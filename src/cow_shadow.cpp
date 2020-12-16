@@ -56,14 +56,11 @@ void Cow_shadow::render(Scene &scene) {
     if(caught)return;
     shader->use();
 
-    // Set up light
     shader->setUniform("vertexColor", {0, 0, 0});
 
-    // use camera
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);
     shader->setUniform("ViewMatrix", scene.camera->viewMatrix);
 
-    // render mesh
     shader->setUniform("ModelMatrix", modelMatrix);
     mesh->render();
 }

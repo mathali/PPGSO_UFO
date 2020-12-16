@@ -13,7 +13,7 @@ private:
   // Material components defined for the object. Extracted from .mtl files downloaded with objects
   glm::vec3 Ka = {0.01882, 0.01882, 0.01882};
   glm::vec3 Kd = {0.05882, 0.05882, 0.05882};
-  glm::vec3 Ks = {0.009, 0.009, 0.009};
+  glm::vec3 Ks = {0.0009, 0.0009, 0.0009};
 
 public:
   Ground();

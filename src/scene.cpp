@@ -28,7 +28,7 @@ void Scene::update(float time) {
         }
     }
 
-    /*
+    /**
      * The following section specifies the movement and transformation of shadows in accordance with the movement
      * of the 'Sun'
      */
@@ -66,8 +66,10 @@ void Scene::update(float time) {
         }
     }
 
-    // Move the generated ground squares according to the position of the player to create an illusion of a continuos
-    // surface
+    /**
+    * Move the generated ground squares according to the position of the player to create an illusion of a continuos
+    * surface
+    */
     auto ground = dynamic_cast<Ground*>(i->get());
     if(ground){
         if(ground->position.x - player_pos.x >= 90 ) {

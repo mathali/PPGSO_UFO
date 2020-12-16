@@ -33,7 +33,7 @@ void Cage::render(Scene &scene) {
     shader->setUniform("Ks", Ks);
     shader->setUniform("object", 5);
 
-    shader->setUniform("BeamFlag", scene.beam_flag);
+    shader->setUniform("BeamFlag", false);
     shader->setUniform("BeamPos", scene.beam_pos);
     shader->setUniform("BeamDirection", scene.beam_direction);
     shader->setUniform("BeamColor", scene.beam_color);

@@ -20,7 +20,7 @@ private:
   Scene scene;
   bool animate = true;
 
-  /*
+  /**
    * First Scene
    * Control a UFO and abduct cows
    */
@@ -62,7 +62,7 @@ private:
     scene.objects.push_back(move(player));
   }
 
-  /*
+  /**
    * Second Scene
    * Look at the display of cows the player has abducted. Camera is controlled using keyframes
    */
@@ -97,11 +97,13 @@ private:
                   scene.captured--;
               }
           }
-
-      // Create a room for the cages.
-      // Created using seperate wall objects - I couldn't find a fitting free model so I had to do it this way.
+      /**
+      * Create a room for the cages.
+      * Created using separate wall objects - I couldn't find a fitting free model so I had to do it this way.
+       */
       auto floor = std::make_unique<Room_wall>();
       floor->position = {0, 0, 0};
+      floor->rotation = {-ppgso::PI/2, 0, 0};
       scene.objects.push_back(move(floor));
 
       auto ceiling = std::make_unique<Room_wall>();

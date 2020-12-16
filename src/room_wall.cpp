@@ -22,7 +22,7 @@ bool Room_wall::update(Scene &scene, float dt) {
 void Room_wall::render(Scene &scene) {
     shader->use();
 
-    shader->setUniform("LightDirection", scene.lightDirection);
+    shader->setUniform("LightDirection", {-3.0f, -9.0f, 0.0f});
     shader->setUniform("Ambient", scene.ambient);
     shader->setUniform("SpecularStrength", scene.specularStrength);
     shader->setUniform("diffuse_strength", scene.diffuseStrength);
@@ -32,7 +32,7 @@ void Room_wall::render(Scene &scene) {
     shader->setUniform("Ks", Ks);
     shader->setUniform("object", 5);
 
-    shader->setUniform("BeamFlag", scene.beam_flag);
+    shader->setUniform("BeamFlag", false);
     shader->setUniform("BeamPos", scene.beam_pos);
     shader->setUniform("BeamDirection", scene.beam_direction);
     shader->setUniform("BeamColor", scene.beam_color);
